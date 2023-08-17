@@ -16,10 +16,11 @@ jobs:
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
-    ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true
+    
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+        using: 'node12'
       - uses: actions/checkout@v3
       - name: Logseq Publish 🚩
         uses: pengx17/logseq-publish@main
