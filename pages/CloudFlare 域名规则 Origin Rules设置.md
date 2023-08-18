@@ -1,0 +1,7 @@
+- CloudFlare 通过官方代理只能是80、443端口
+- 国内除非为固定公网IP，否则均封锁，连ipv6都不能幸免
+- 通过Origin Rules规则的设置可以回源任意端口（免费版支持10个可用规则）
+- ![image.png](../assets/image_1690874372331_0.png)
+-
+- ![image.png](../assets/image_1690874428401_0.png)
+-

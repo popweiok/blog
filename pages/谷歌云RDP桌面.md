@@ -1,0 +1,7 @@
+- 先登录谷歌云   地址：https://cloud.google.com/?hl=zh-cn
+- 右上角激活 cloud shell
+	- ![image.png](../assets/image_1690866947660_0.png)
+- 激活成功后直接执行下面代码
+	- `docker run -p 8080:80 dorowu/ubuntu-desktop-lxde-vnc`
+- 点击：在网页预览
+-

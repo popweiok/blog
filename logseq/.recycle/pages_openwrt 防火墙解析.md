@@ -1,0 +1,97 @@
+- https://zt0729.xyz/archives/56/
+	- 这个是根据 b站 OpenWrt的防火墙到底这么多选项都是什么意思？ 记录的笔记。
+	- openwrt 防火墙管理界面一般里有 4 个选项：基本设置、端口转发、通信规则、自定义规则。
+	- ![](https://imgcdn.zt0729.xyz/lskyimg/63e88f5c1ab16.png)
+	- ## 1\. 基本设置
+	- 防火墙是通过在网络接口上创建区域来控制网络流量的。
+	- ![](https://imgcdn.zt0729.xyz/lskyimg/63e88f6228bb3.png)
+	- ### 1.1 基本设置
+	- ![](https://imgcdn.zt0729.xyz/lskyimg/63e88fe1541e5.png)
+	- * 启用 SYN-flood 防护：拒绝服务攻击的防护（DDOS防护）
+	- * 丢弃无效数据包：字面意思，丢弃无效数据包.
+	- * 启用 FullCone-NAT：这个相当于让局域网内设备都能获得 NAT1 的类型（上层需要时NAT1）(不建议开启)
+	- * 三个出入转发规则：当接口没有加入任何一个防火墙区域的时候，就遵循这个默认规则。（相当于默认区域的防火墙规则。跟下面区域规则是一个意思）.
+	- ### 1.2 区域
+	- ![](https://imgcdn.zt0729.xyz/lskyimg/63e88f6f1e9c4.png)
+	- **举例：**
+	- * openwrt 软路由有 4 个网口，分别连接 4 个设备。
+	- * 同时 1、2、3 口处于 LAN 防火墙区域，4 口处于 WAN 防火墙区域。
+	- * 2 与 3 口组成一个 br-lan 网桥端口，在同一子网下，跟 1口是不同子网的。
+	- ![](https://imgcdn.zt0729.xyz/lskyimg/63e88f7421ad8.jpg)
+	- * 出站：当设备 A ==**主动**\==访问网关的时候，叫入站。
+	- * 入站：当网关==**主动**\==访问设备 A 的时候，叫出站。都是对于 LAN 防火墙区域来的。
+	- > 注意：入站是 A ==**主动**\==访问网关，包括==网关回复的应答，这个应答不属于出站规则的管理范畴==。出站同理。
+	- * 转发：当 A 设备访问 B 设备的时候，就叫 LAN 区域内的转发。
+	- * IP 动态伪装：假设 LAN 区域开启了 IP 动态伪装，那么当 A 设备访问 B 设备的时候，本来 B 获取到的信息应该是 A 要访问它，但开启 IP 动态伪装之后，B 会觉得是网关（一般是子网的网关地址）访问了它，而不是A。（相当于在LAN区域内的设备把源 ip 换为 网关 ip）
+	- >   * WAN 区域的 IP 动态伪装是需要默认开启的，不能关闭的。
+	- >   * 玩单网口旁路由的时候经常需要输入 `iptables -t nat -I POSTROUTING -o eth0 -j MASQUERADE` 这个命令，其实是跟IP动态伪装是一个意思。
+	- * 区域之间的转发：例![](https://imgcdn.zt0729.xyz/lskyimg/63e88f869d099.png)lan 区域可以主动访问 wan，vpn 区域，反之不能。
+	- > wan 防火墙区域当中的 wan 口一般连接外网设备。
+	- > ![](https://imgcdn.zt0729.xyz/lskyimg/63e88f9a206eb.png)
+	- * MMS 钳制：主要用来改以太帧的（MTU 数值）；内网防火墙区域一般用不到，WAN 防火墙区域一般是需要的。
+	- * 路由/NAT分载：流量加速；当设备 CPU 不是很强，网络又需要大流量数据传输的时候，开启它会减轻 CPU 的运行压力。
+	- ## 2\. 端口转发
+	- ### 2.1 相当于内外网的端口映射。
+	- ![](https://imgcdn.zt0729.xyz/lskyimg/63e88f7d5529d.png)源区域是 WAN 防火墙区域（也就是外网区域），外部端口为你想让人访问的端口；目标区域是 LAN 防火墙区域（也是你想被外网访问的区内部区域)，内部 ip 就是想要被外网访问的设备 ip，内部端口就是你应用的端口。
+	- 这样别人就可以通过外网 ip 加外部端口访问你内网设备。
+	- ### 2.2 另一个用途让你的主机的网络获得 NAT1 类型（前提为这个路由拨号）
+	- ![](https://imgcdn.zt0729.xyz/lskyimg/63e88fa5e4f77.png)
+	- 协议选任何，源区域选外网，目标区域选内网，内部 ip 为你主机 ip。
+	- ## 3\. 通信规则
+	- ### 3.1\. 通信规则
+	- 通信规则定义了不同区域间的数据包传输策略，例如: 拒绝一些主机之间的通信，开放路由器 WAN 上的端口。
+	- 不仅可以对于某一个防火墙区域内的流量进行管理，同时可以进行区域之间流量的管控。而且只里面的规则高于常规（基本）设置里面的规则。（比如：WAN 防火墙的入站数据现在是拒绝的，我们可以在通讯规则这里设置一下 让它变成可以访问）
+	- 就是在前面大原则下，根据需要，放行某些特殊的流量。
+	- 所有规则按照顺序执行，可以手动调整。
+	- ### 3.2 NAT规则
+	- 一种特殊形式的封包伪装，它允许精细的控制传出流量的源 IP，例如：将多个 WAN 地址映射到内部子网。对应的起始就是 IP 动态伪装。
+	- ## 4\. 自定义规则
+	- 自定义规则允许您执行不属于防火墙框架的任意 iptables 命令。每次重启防火墙时，在默认的规则运行后这些命令将立即执行。
+	- ---
+	- #### Page 2
+	- * 博主： [ 一只不喝可乐的猪](https://zt0729.xyz/author/1/)
+	- * 发布时间：2022 年 11 月 02 日
+	- * 311 次浏览
+	- * [暂无评论](#comments)
+	- * 4130字数
+	- * 分类： [软技术教程](https://zt0729.xyz/category/1/)
+	- 在使用 qt 的时候看着那么多的类，头就大。老大告诉我不了解的可以查看帮助，结果帮助还 tmd 全英文，并且主要看哪里也不知道，想哭。所以想记录下，qt 帮助到底是怎么看的。
+	- 一般看 qt 帮助主要就是看
+	- 1. 类的介绍，
+	- 2. 类所相应成员函数（功能，参数，返回值）
+	- 3. 类的信号
+	- 4. 类的事件（所对应的虚函数如何编写）。
+	- ## 1\. 类的介绍
+	- 可以将光标移动到类名上，然后按 `F1` 就可以打开相应的帮助文件![image-20221102192432247](https://zt0729-picture-bed.oss-cn-beijing.aliyuncs.com/ii/202211021924445.png)再按一次 `F1` 可以将帮助文档页面全屏，按 `Ecs` 可以关闭帮助文档页面。
+	- 类的相关介绍：![uTools_1667388682072](https://zt0729-picture-bed.oss-cn-beijing.aliyuncs.com/ii/202211021936379.png)
+	- **所要查看的几个重要信息：**![uTools_1667389141193](https://zt0729-picture-bed.oss-cn-beijing.aliyuncs.com/ii/202211021942089.png)
+	- * 公有成员函数：操作部件属性的相关函数。
+	- * 公有槽函数：Qt类中已经定义好的槽函数，直接可与型号相连接。
+	- * 信号：软中断，如按下按钮触发 pressed() 信号等。
+	- * 保护成员函数：通常事件所对应的虚函数放在此处。
+	- * 事件：常用事件，如操作鼠标触发的鼠标事件。
+	- 也可以使用侧边栏的帮助模式下，通过搜索索引搜索相应的类
+	- ![image-20221102194843572](https://zt0729-picture-bed.oss-cn-beijing.aliyuncs.com/ii/202211021948612.png)![image-20221102194940861](https://zt0729-picture-bed.oss-cn-beijing.aliyuncs.com/ii/202211021949898.png)
+	- ## 2\. 类所相应成员函数（功能，参数，返回值）
+	- 查看所用部件的相应成员函数（本身的成员函数，继承过来的成员函数），主要是为了查看类的成员函数如何使用，主要关注函数的功能，参数，返回值。
+	- **下面以 QPushButton （普通按钮）为例：**
+	- 1. 选择 QPushButton 类中的 “ 公有函数 ”： ![image-20221102195534392](https://zt0729-picture-bed.oss-cn-beijing.aliyuncs.com/ii/202211021955460.png)
+	- 2. 相应函数的简单介绍：![image-20221102200116439](https://zt0729-picture-bed.oss-cn-beijing.aliyuncs.com/ii/202211022001537.png)
+	- 3. 点击函数名字即可查看相应用法：![image-20221102200239257](https://zt0729-picture-bed.oss-cn-beijing.aliyuncs.com/ii/202211022002331.png)![2022-11-02_200838](https://zt0729-picture-bed.oss-cn-beijing.aliyuncs.com/ii/202211022012184.png)
+	- 4. **很多时候，我们需要使用到继承过来的函数，**如给按钮设置内容（ setText() ）即使从QAbstractButton 继承过来：![image-20221102201609020](https://zt0729-picture-bed.oss-cn-beijing.aliyuncs.com/ii/202211022016095.png)点击 “ QAbstractButton ” 即可跳转QAbstractButton 公有函数的地方：![image-20221102201803820](https://zt0729-picture-bed.oss-cn-beijing.aliyuncs.com/ii/202211022018901.png)点击函数名字即可查看用法：![image-20221102202219797](https://zt0729-picture-bed.oss-cn-beijing.aliyuncs.com/ii/202211022022874.png)
+	- 5. 操作过程中，可能需要用到 “ 后退 ” 、“ 前进 ” 进行页面来回切换：![image-20221102203534235](https://zt0729-picture-bed.oss-cn-beijing.aliyuncs.com/ii/202211022035310.png)
+	- 6. 很多时候，我们可能需要在使用到某个函数时，在查看其用法。
+	- 首先，需要**需要先把函数的参数随便填个数填好**，然后，光标移动到函数名的地方，在按 " F1 " 即可跳转到该函数的使用说明：![image-20221102204034208](https://zt0729-picture-bed.oss-cn-beijing.aliyuncs.com/ii/202211022040249.png)![image-20221102204135417](https://zt0729-picture-bed.oss-cn-beijing.aliyuncs.com/ii/202211022041491.png)
+	- ## 3\. 类的信号
+	- 还是以 QPushButton 为例：
+	- 1. 在 QPushbutoon 类中不能直接查看Singnals 的信息，需要在其基类 " QAbstactButton " 中查找：![image-20221102204559490](https://zt0729-picture-bed.oss-cn-beijing.aliyuncs.com/ii/202211022045550.png)
+	- 2. 在 “ QAbstractButton ” ，选择 “ Signals ” ：![image-20221102204733043](https://zt0729-picture-bed.oss-cn-beijing.aliyuncs.com/ii/202211022047106.png)
+	- 3. 除了本身信号，还有继承过来的信号：![image-20221102204900805](https://zt0729-picture-bed.oss-cn-beijing.aliyuncs.com/ii/202211022049886.png)
+	- 4. 点击信号名字，即可查看信号的相关说明：![image-20221102205043615](https://zt0729-picture-bed.oss-cn-beijing.aliyuncs.com/ii/202211022050666.png)![image-20221102205221323](https://zt0729-picture-bed.oss-cn-beijing.aliyuncs.com/ii/202211022052386.png)
+	- ## 4\. 类的事件（所对应的虚函数如何编写）
+	- 部件常用事件主要在 QWidget 中声明，选择 “ Events ” 即可查看相关说明：![image-20221102205601764](https://zt0729-picture-bed.oss-cn-beijing.aliyuncs.com/ii/202211022056894.png)每个事件都对应着事件函数：![image-20221102205918246](https://zt0729-picture-bed.oss-cn-beijing.aliyuncs.com/ii/202211022059351.png)
+	- 事件函数的相关说明：![image-20221102210235107](https://zt0729-picture-bed.oss-cn-beijing.aliyuncs.com/ii/202211022102207.png)
+	- **主要就是这么看 qt 的帮助信息，总比之前毫无头绪的好**
+	- ## 小技巧
+	- 由于帮助信息都是英文就很难受，尤其我还是个英语白痴，来回粘贴复制到百度翻译又来回看有点麻烦，所以这里推荐使用 有道词典客户端的划词翻译。真的有点香。打开客户端然后最小化，之后找到想要翻译的语句，用鼠标划上，然后点击放大镜。比如以下：![image-20221102211006293](https://zt0729-picture-bed.oss-cn-beijing.aliyuncs.com/ii/202211022110407.png)就自动将翻译信息显示出来![image-20221102211037307](https://zt0729-picture-bed.oss-cn-beijing.aliyuncs.com/ii/202211022110379.png)就很香，但毕竟不是人，有的时候翻译的还是有点错误的，但比我什么也看不懂强。还是要好好学习英语呀！
+	- <h1>qt 帮助使用指南</h1><p>在使用 qt 的时候看着那么多的类，头就大。老大告诉我不了解的可以查看帮助，结果帮助还 tmd 全英文，并且主要看哪里也不知道，想哭。所以想记录下，qt 帮助到底是怎么看的。</p><p>一般看 qt 帮助主要就是看</p><ol><li>类的介绍，</li><li>类所相应成员函数（功能，参数，返回值）</li><li>类的信号</li><li>类的事件（所对应的虚函数如何编写）。</li></ol><h2>1\. 类的介绍</h2><p>可以将光标移动到类名上，然后按 <code>F1</code> 就可以打开相应的帮助文件<img src="https://zt0729-picture-bed.oss-cn-beijing.aliyuncs.com/ii/202211021924445.png" alt="image-20221102192432247" title="image-20221102192432247"style="">再按一次 <code>F1</code> 可以将帮助文档页面全屏，按 <code>Ecs</code> 可以关闭帮助文档页面。</p><p>类的相关介绍：<img src="https://zt0729-picture-bed.oss-cn-beijing.aliyuncs.com/ii/202211021936379.png" alt="uTools\_1667388682072" title="uTools\_1667388682072"style=""></p><p><strong>所要查看的几个重要信息：</strong><img src="https://zt0729-picture-bed.oss-cn-beijing.aliyuncs.com/ii/202211021942089.png" alt="uTools\_1667389141193" title="uTools\_1667389141193"style=""></p><ul><li>公有成员函数：操作部件属性的相关函数。</li><li>公有槽函数：Qt类中已经定义好的槽函数，直接可与型号相连接。</li><li>信号：软中断，如按下按钮触发 pressed() 信号等。</li><li>保护成员函数：通常事件所对应的虚函数放在此处。</li><li>事件：常用事件，如操作鼠标触发的鼠标事件。</li></ul><p>也可以使用侧边栏的帮助模式下，通过搜索索引搜索相应的类</p><p><img src="https://zt0729-picture-bed.oss-cn-beijing.aliyuncs.com/ii/202211021948612.png" alt="image-20221102194843572" title="image-20221102194843572"style=""><img src="https://zt0729-picture-bed.oss-cn-beijing.aliyuncs.com/ii/202211021949898.png" alt="image-20221102194940861" title="image-20221102194940861"style=""></p><h2>2\. 类所相应成员函数（功能，参数，返回值）</h2><p>查看所用部件的相应成员函数（本身的成员函数，继承过来的成员函数），主要是为了查看类的成员函数如何使用，主要关注函数的功能，参数，返回值。</p><p><strong>下面以 QPushButton （普通按钮）为例：</strong></p><ol><li>选择 QPushButton 类中的 “ 公有函数 ”： <img src="https://zt0729-picture-bed.oss-cn-beijing.aliyuncs.com/ii/202211021955460.png" alt="image-20221102195534392" title="image-20221102195534392"style=""></li><li>相应函数的简单介绍：<img src="https://zt0729-picture-bed.oss-cn-beijing.aliyuncs.com/ii/202211022001537.png" alt="image-20221102200116439" title="image-20221102200116439"style=""></li><li>点击函数名字即可查看相应用法：<img src="https://zt0729-picture-bed.oss-cn-beijing.aliyuncs.com/ii/202211022002331.png" alt="image-20221102200239257" title="image-20221102200239257"style=""><img src="https://zt0729-picture-bed.oss-cn-beijing.aliyuncs.com/ii/202211022012184.png" alt="2022-11-02\_200838" title="2022-11-02\_200838"style=""></li><li><strong>很多时候，我们需要使用到继承过来的函数，</strong>如给按钮设置内容（ setText() ）即使从QAbstractButton 继承过来：<img src="https://zt0729-picture-bed.oss-cn-beijing.aliyuncs.com/ii/202211022016095.png" alt="image-20221102201609020" title="image-20221102201609020"style="">点击 “ QAbstractButton ” 即可跳转QAbstractButton 公有函数的地方：<img src="https://zt0729-picture-bed.oss-cn-beijing.aliyuncs.com/ii/202211022018901.png" alt="image-20221102201803820" title="image-20221102201803820"style="">点击函数名字即可查看用法：<img src="https://zt0729-picture-bed.oss-cn-beijing.aliyuncs.com/ii/202211022022874.png" alt="image-20221102202219797" title="image-20221102202219797"style=""></li><li>操作过程中，可能需要用到 “ 后退 ” 、“ 前进 ” 进行页面来回切换：<img src="https://zt0729-picture-bed.oss-cn-beijing.aliyuncs.com/ii/202211022035310.png" alt="image-20221102203534235" title="image-20221102203534235"style=""></li><li><p>很多时候，我们可能需要在使用到某个函数时，在查看其用法。</p><p>首先，需要<strong>需要先把函数的参数随便填个数填好</strong>，然后，光标移动到函数名的地方，在按 " F1 " 即可跳转到该函数的使用说明：<img src="https://zt0729-picture-bed.oss-cn-beijing.aliyuncs.com/ii/202211022040249.png" alt="image-20221102204034208" title="image-20221102204034208"style=""><img src="https://zt0729-picture-bed.oss-cn-beijing.aliyuncs.com/ii/202211022041491.png" alt="image-20221102204135417" title="image-20221102204135417"style=""></p></li></ol><h2>3\. 类的信号</h2><p>还是以 QPushButton 为例：</p><ol><li>在 QPushbutoon 类中不能直接查看Singnals 的信息，需要在其基类 " QAbstactButton " 中查找：<img src="https://zt0729-picture-bed.oss-cn-beijing.aliyuncs.com/ii/202211022045550.png" alt="image-20221102204559490" title="image-20221102204559490"style=""></li><li>在 “ QAbstractButton ” ，选择 “ Signals ” ：<img src="https://zt0729-picture-bed.oss-cn-beijing.aliyuncs.com/ii/202211022047106.png" alt="image-20221102204733043" title="image-20221102204733043"style=""></li><li>除了本身信号，还有继承过来的信号：<img src="https://zt0729-picture-bed.oss-cn-beijing.aliyuncs.com/ii/202211022049886.png" alt="image-20221102204900805" title="image-20221102204900805"style=""></li><li>点击信号名字，即可查看信号的相关说明：<img src="https://zt0729-picture-bed.oss-cn-beijing.aliyuncs.com/ii/202211022050666.png" alt="image-20221102205043615" title="image-20221102205043615"style=""><img src="https://zt0729-picture-bed.oss-cn-beijing.aliyuncs.com/ii/202211022052386.png" alt="image-20221102205221323" title="image-20221102205221323"style=""></li></ol><h2>4\. 类的事件（所对应的虚函数如何编写）</h2><p>部件常用事件主要在 QWidget 中声明，选择 “ Events ” 即可查看相关说明：<img src="https://zt0729-picture-bed.oss-cn-beijing.aliyuncs.com/ii/202211022056894.png" alt="image-20221102205601764" title="image-20221102205601764"style="">每个事件都对应着事件函数：<img src="https://zt0729-picture-bed.oss-cn-beijing.aliyuncs.com/ii/202211022059351.png" alt="image-20221102205918246" title="image-20221102205918246"style=""></p><p>事件函数的相关说明：<img src="https://zt0729-picture-bed.oss-cn-beijing.aliyuncs.com/ii/202211022102207.png" alt="image-20221102210235107" title="image-20221102210235107"style=""></p><p><strong>主要就是这么看 qt 的帮助信息，总比之前毫无头绪的好</strong></p><h2>小技巧</h2><p>由于帮助信息都是英文就很难受，尤其我还是个英语白痴，来回粘贴复制到百度翻译又来回看有点麻烦，所以这里推荐使用 有道词典客户端的划词翻译。真的有点香。打开客户端然后最小化，之后找到想要翻译的语句，用鼠标划上，然后点击放大镜。比如以下：<img src="https://zt0729-picture-bed.oss-cn-beijing.aliyuncs.com/ii/202211022110407.png" alt="image-20221102211006293" title="image-20221102211006293"style="">就自动将翻译信息显示出来<img src="https://zt0729-picture-bed.oss-cn-beijing.aliyuncs.com/ii/202211022110379.png" alt="image-20221102211037307" title="image-20221102211037307"style="">就很香，但毕竟不是人，有的时候翻译的还是有点错误的，但比我什么也看不懂强。还是要好好学习英语呀！</p>
