@@ -18,5 +18,5 @@ jobs:
         with:
           folder: www
           trace: false
-          token: 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
+          token: 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
           repository-name: popweiok/logseq
