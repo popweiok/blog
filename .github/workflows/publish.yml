@@ -17,5 +17,5 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: www
-          token: ${{ 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 }}
+          token: ${{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}}
           repository-name: popweiok/logseq
