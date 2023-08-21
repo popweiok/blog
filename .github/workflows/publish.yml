@@ -17,6 +17,3 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: www
-          trace: false
-          token: ${{ secrets.ACCESS_TOKEN }}
-          repository-name: popweiok/logseq
