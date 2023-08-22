@@ -1,4 +1,4 @@
-- 摘要：光纤交换机作为SAN网络的重要组成部分，在日常应用中非常普遍，本次将以常用的博科交换机介绍基本的配置方法。
+- *摘要：光纤交换机作为SAN网络的重要组成部分，在日常应用中非常普遍，本次将以常用的博科交换机介绍基本的配置方法。*
 - 博科300实物图：
 - ![](https://s2.51cto.com/images/20211207/1638850816784419.png?x-oss-process=image/watermark,size_14,text_QDUxQ1RP5Y2a5a6i,color_FFFFFF,t_30,g_se,x_10,y_10,shadow_20,type_ZmFuZ3poZW5naGVpdGk=/format,webp/resize,m_fixed,w_1184)
 - 一、环境描述：
