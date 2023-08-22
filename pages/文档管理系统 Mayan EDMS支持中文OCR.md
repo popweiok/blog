@@ -37,13 +37,6 @@
 		  ```
 			- `https://tesseract-ocr.github.io/tessdoc/Data-Files`
 		- 我们下载chi_sim.traineddata简体中文就好了
-- https://github.com/tesseract-ocr/tessdata/raw/4.00/chi_sim.traineddata
-  1
-  下载完成后，上传到
-- /usr/share/tesseract-ocr/4.00/tessdata
-  1
-  修改为zho.traineddata
-- 现在这个系统就可以支持中文的图片识别了
-  ————————————————
-  版权声明：本文为CSDN博主「lefooter」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
-  原文链接：https://blog.csdn.net/baidu_19620507/article/details/105411848
+			- `https://github.com/tesseract-ocr/tessdata/raw/4.00/chi_sim.traineddata`
+		- 下载完成后，上传到
+			- `/usr/share/tesseract-ocr/4.00/tessdata`
