@@ -30,8 +30,7 @@
 - ![image.png](../assets/image_1692690114453_0.png)
 - ![image.png](../assets/image_1692690128927_0.png)
 - **管理级联连接**
-  
-  ![image-20230529160850037](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20230529160850037.png)
+- ![image.png](../assets/image_1692690144621_0.png)
 - ### 3 静态路由
   
   **总部路由器上添加：192.168.2.0 255.255.255.0 下一跳192.168.1.254.**
