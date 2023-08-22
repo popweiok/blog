@@ -18,4 +18,8 @@
 		- ![image.png](../assets/image_1692695851745_0.png)
 	- 点击上图红框中的Zone Admin进入ZONE配置界面，如下图，配置顺序为首先创建Alias（别名）、再创建Zone（区域）、最后配置Zone Config（保存配置）：
 		- ![image.png](../assets/image_1692695894210_0.png)
-	-
+	- 按照上面规划好的别名开始创建，点击上图中的New Alias，如下图，输入名称，点击OK
+		- ![image.png](../assets/image_1692695924882_0.png).
+	- 如下图，Name中选择好刚创建的别名，然后在Member Selection List中选择存储V3700实际接的端口，这里为1,0，选中1,0，再点击中间的“Add Member >>”，完成端口的添加。这样一个别名就创建好了，其它5个别名也按此方法创建
+		- ![image.png](../assets/image_1692695957508_0.png)
+		-
