@@ -31,4 +31,7 @@
 		- ![image.png](../assets/image_1692696044992_0.png)
 	- 如下图，在Member Selection List中，全选刚才建的8个Zone，点击Add Member，添加至右边窗口中，再点击下图中的Enable Config按扭来生效配置；
 		- ![image.png](../assets/image_1692696074457_0.png)
-	-
+	- 选择刚才创建的配置文件newconfig，点击OK，完成后，再点右边的Save Config来保存配置信息。
+		- ![image.png](../assets/image_1692696097438_0.png)
+- 通过命令配置：（可选，建议用WEB配置）
+-
