@@ -81,21 +81,33 @@
 	- ### 3.cfg创建：
 		- 第一台：
 			- ```
+			  cfgcreate “newcfg”,
+			  “esix_01_ibmv7000_spa;esix_01_ibmv7000_spb;
+			  esix_02_ibmv7000_spa;esix_02_ibmv7000_spb;
+			  yingyongserver1_ibmv7000_spa;yingyongserver1_ibmv7000_spb;
+			  yingyongserver2_ibmv7000_spa;yingyongserver2_ibmv7000_spb”
+			  
 			  ```
 		- 第二台：
 			- ```
+			  cfgcreate “newcfg”,
+			  “esix_01_ibmv7000_spa;esix_01_ibmv7000_spb;
+			  esix_02_ibmv7000_spa;esix_02_ibmv7000_spb;
+			  yingyongserver1_ibmv7000_spa;yingyongserver1_ibmv7000_spb;
+			  yingyongserver2_ibmv7000_spa;yingyongserver2_ibmv7000_spb”
+			  
 			  ```
-			- ### 2.zone创建：
-				- 第一台：
-					- ```
-					  ```
-				- 第二台：
-					- ```
-					  ```
-					- ### 2.zone创建：
-						- 第一台：
-							- ```
-							  ```
-						- 第二台：
-							- ```
-							  ```
+		- ### 4.启用配置
+			- 第一台：
+				- ```
+				  ```
+			- 第二台：
+				- ```
+				  ```
+				- ### 2.zone创建：
+					- 第一台：
+						- ```
+						  ```
+					- 第二台：
+						- ```
+						  ```
