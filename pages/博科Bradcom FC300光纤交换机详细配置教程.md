@@ -53,40 +53,49 @@
 			  alicreate “yingyongserver01_hba02”,“1,4”
 			  alicreate “yingyongserver02_hba02”,“1,5”
 			  ```
-		- ### 2.zone创建：
-			- 第一台：
-				- ```
-				  zonecreate “esix_01_ibmv7000_spa”,“ibm_v7000_spa01;esxi01_hba01”
-				  zonecreate “esix_01_ibmv7000_spb”,“ibm_v7000_spb01;esxi01_hba01”
-				  zonecreate “esix_02_ibmv7000_spa”,“ibm_v7000_spa01;esix_02_hba01”
-				  zonecreate “esix_02_ibmv7000_spb”,“ibm_v7000_spb01;esix_02_hba01”
-				  zonecreate “yingyongserver1_ibmv7000_spa”,“ibm_v7000_spa01;yingyongserver01_hba01”
-				  zonecreate “yingyongserver1_ibmv7000_spb”,“ibm_v7000_spb01;yingyongserver01_hba01”
-				  zonecreate “yingyongserver2_ibmv7000_spa”,“ibm_v7000_spa01;yingyongserver02_hba01”
-				  zonecreate “yingyongserver2_ibmv7000_spb”,“ibm_v7000_spb01;yingyongserver02_hba01”
-				  
-				  ```
-			- 第二台：
-				- ```
-				  ```
-- ### 2.zone创建：
-	- 第一台：
-		- ```
-		  ```
-	- 第二台：
-		- ```
-		  ```
-		- ### 2.zone创建：
-			- 第一台：
-				- ```
-				  ```
-			- 第二台：
-				- ```
-				  ```
-				- ### 2.zone创建：
-					- 第一台：
-						- ```
-						  ```
-					- 第二台：
-						- ```
-						  ```
+	- ### 2.zone创建：
+		- 第一台：
+			- ```
+			  zonecreate “esix_01_ibmv7000_spa”,“ibm_v7000_spa01;esxi01_hba01”
+			  zonecreate “esix_01_ibmv7000_spb”,“ibm_v7000_spb01;esxi01_hba01”
+			  zonecreate “esix_02_ibmv7000_spa”,“ibm_v7000_spa01;esix_02_hba01”
+			  zonecreate “esix_02_ibmv7000_spb”,“ibm_v7000_spb01;esix_02_hba01”
+			  zonecreate “yingyongserver1_ibmv7000_spa”,“ibm_v7000_spa01;yingyongserver01_hba01”
+			  zonecreate “yingyongserver1_ibmv7000_spb”,“ibm_v7000_spb01;yingyongserver01_hba01”
+			  zonecreate “yingyongserver2_ibmv7000_spa”,“ibm_v7000_spa01;yingyongserver02_hba01”
+			  zonecreate “yingyongserver2_ibmv7000_spb”,“ibm_v7000_spb01;yingyongserver02_hba01”
+			  
+			  ```
+		- 第二台：
+			- ```
+			  zonecreate “esix_01_ibmv7000_spa”,“ibm_v7000_spa02;esxi01_hba02”
+			  zonecreate “esix_01_ibmv7000_spb”,“ibm_v7000_spb02;esxi01_hba02”
+			  zonecreate “esix_02_ibmv7000_spa”,“ibm_v7000_spa02;esix_02_hba02”
+			  zonecreate “esix_02_ibmv7000_spb”,“ibm_v7000_spb02;esix_02_hba02”
+			  zonecreate “yingyongserver1_ibmv7000_spa”,“ibm_v7000_spa02;yingyongserver01_hba02”
+			  zonecreate “yingyongserver1_ibmv7000_spb”,“ibm_v7000_spb02;yingyongserver01_hba02”
+			  zonecreate “yingyongserver2_ibmv7000_spa”,“ibm_v7000_spa02;yingyongserver02_hba02”
+			  zonecreate “yingyongserver2_ibmv7000_spb”,“ibm_v7000_spb02;yingyongserver02_hba02”
+			  
+			  ```
+	- ### 3.cfg创建：
+		- 第一台：
+			- ```
+			  ```
+		- 第二台：
+			- ```
+			  ```
+			- ### 2.zone创建：
+				- 第一台：
+					- ```
+					  ```
+				- 第二台：
+					- ```
+					  ```
+					- ### 2.zone创建：
+						- 第一台：
+							- ```
+							  ```
+						- 第二台：
+							- ```
+							  ```
