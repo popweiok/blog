@@ -14,7 +14,8 @@
 		- ***DOCUMENTS_LANGUAGE_CODES***
 			- 例如，将列表缩小为仅英语和中文
 			- `DOCUMENTS_LANGUAGE_CODES = ('eng', 'zho')`
-		- zho在ISO 639表示中文，其他语言在https://tesseract-ocr.github.io/tessdoc/Data-Files查找
+				- zho在ISO 639表示中文，其他语言在https://tesseract-ocr.github.io/tessdoc/Data-Files查找
+					- ![image.png](../assets/image_1692681747170_0.png)
 - 也可以使用以下命令配置下拉菜单中显示的默认语言：
 - DOCUMENTS_LANGUAGE = 'zho'
   1
