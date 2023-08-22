@@ -27,14 +27,9 @@
 - #### 2.1 【Bridge端】，默认有一个【BRIDGE】虚拟HUB，负责与物理局域网的桥接，和到总部的VPN连接
   
   **与物理局域网的桥接**
-  
-  ![image-20230529160800024](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20230529160800024.png)
-  
-  ![image-20230529160820382](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20230529160820382.png)
-  
-  
-  
-  **管理级联连接**
+- ![image.png](../assets/image_1692690114453_0.png)
+- ![image.png](../assets/image_1692690128927_0.png)
+- **管理级联连接**
   
   ![image-20230529160850037](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20230529160850037.png)
 - ### 3 静态路由
