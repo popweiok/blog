@@ -34,4 +34,16 @@
 	- 选择刚才创建的配置文件newconfig，点击OK，完成后，再点右边的Save Config来保存配置信息。
 		- ![image.png](../assets/image_1692696097438_0.png)
 - 通过命令配置：（可选，建议用WEB配置）
--
+	- ### 1.alias创建：
+		- 第一台交换机：
+		- ```
+		  alicreate “ibm_v7000_spa01”,“1,0”
+		  alicreate “ibm_v7000_spb01”,“1,1”
+		  alicreate “esxi01_hba01”,“1,2”
+		  alicreate “esix_02_hba01”,“1,3”
+		  alicreate “yingyongserver01_hba01”,“1,4”
+		  alicreate “yingyongserver02_hba01”,“1,5”
+		  -----------------------------------
+		  博科FC光纤交换机详细配置教程
+		  https://blog.51cto.com/chelaoer/4758247```
+		-
