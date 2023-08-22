@@ -104,9 +104,22 @@
 		  ```
 	- ### 最后show一下配置是否启用以及是否出错
 		- ```
+		  switchshow：
+		  
+		  swd77:admin> switchshow
+		  switchName: swd77
+		  switchType: 71.2
+		  switchState: Online
+		  switchMode: Native
+		  switchRole: Principal
+		  switchDomain: 1
+		  switchId: fffc01
+		  switchWwn: 10:00:50:eb:1a:3f:0b:98
+		  zoning: ON (newconfig)
+		  switchBeacon: OFF
+		  
 		  ```
-		- ### 2.zone创建：
-			- 第一台：
+			- Index Port Address Media Speed State Proto
 				- ```
 				  ```
 			- 第二台：
