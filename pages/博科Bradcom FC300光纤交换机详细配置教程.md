@@ -15,4 +15,7 @@
 	- 开始配置光纤交换机，可以从图形界面(JAVA)或者命令行两种方式配置，首先介绍图形化配置方式，在浏览器中输入10.77.77.77进入登陆界面，输入默认登陆信息admin/password，进入管理系统。
 		- ![image.png](../assets/image_1692695815030_0.png)
 	- 管理系统界面：
+		- ![image.png](../assets/image_1692695851745_0.png)
+	- 点击上图红框中的Zone Admin进入ZONE配置界面，如下图，配置顺序为首先创建Alias（别名）、再创建Zone（区域）、最后配置Zone Config（保存配置）：
+		- ![image.png](../assets/image_1692695894210_0.png)
 	-
