@@ -25,4 +25,10 @@
 	- 接着开始创建Zone，如下图，选择中间的Zone选项栏，如下图，点击New Zone，输入ZONE name，点OK
 		- ![image.png](../assets/image_1692695986256_0.png)
 	- Name选中刚才创建的Zone，Member selection List中选择Aliases，选择该区域的两个端口，即esxi01_hba01和ibmv3700_spa01，选中点击Add Members添加至zone中，其它7个zone也同样方法添加。
-		-
+		- ![image.png](../assets/image_1692696018344_0.png)
+	- 完成8个ZONE创建后如下图所示；
+	  接着点Zone Config开始保存配置，输入Config name名称，如下图
+		- ![image.png](../assets/image_1692696044992_0.png)
+	- 如下图，在Member Selection List中，全选刚才建的8个Zone，点击Add Member，添加至右边窗口中，再点击下图中的Enable Config按扭来生效配置；
+		- ![image.png](../assets/image_1692696074457_0.png)
+	-
