@@ -21,10 +21,9 @@
 - 点击3层交换机的【编辑】按钮，**为【BenDi】和【FenBu】虚拟HUB添加虚拟接口**
   
   ![image.png](../assets/image_1692689988862_0.png)
-- ![image-20230529160614249](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20230529160614249.png)
+- ![image.png](../assets/image_1692690024348_0.png)
 - ### 2 分部端
-  
-  ![image-20230529160739231](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20230529160739231.png)
+- ![image.png](../assets/image_1692690058311_0.png)
 - #### 2.1 【Bridge端】，默认有一个【BRIDGE】虚拟HUB，负责与物理局域网的桥接，和到总部的VPN连接
   
   **与物理局域网的桥接**
