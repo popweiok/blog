@@ -1,7 +1,6 @@
-- 摘自https://blog.csdn.net/baidu_19620507/article/details/105411848
-- ## 1.介绍
-  安装完后报错OCR识别中文报错了
-  Exception calling Tesseract with language option: zho; RAN: /usr/bin/tesseract - - -l zhoSTDOUT: STDERR: Error opening data file /usr/share/tesseract-ocr/4.00/tessdata/zho.traineddata Please make sure the TESSDATA_PREFIX environment variable is set to your “tessdata” directory. Failed loading language ‘zho’ Tesseract couldn’t load any languages! Could not initialize tesseract. The requested OCR language “zho” is not available and needs to be installed.
+## 1.介绍
+安装完后报错OCR识别中文报错了
+Exception calling Tesseract with language option: zho; RAN: /usr/bin/tesseract - - -l zhoSTDOUT: STDERR: Error opening data file /usr/share/tesseract-ocr/4.00/tessdata/zho.traineddata Please make sure the TESSDATA_PREFIX environment variable is set to your “tessdata” directory. Failed loading language ‘zho’ Tesseract couldn’t load any languages! Could not initialize tesseract. The requested OCR language “zho” is not available and needs to be installed.
 	- 文档管理系统 Mayan EDMS，安装完默认OCR不支持中文的。
 		- 文档管理系统 Mayan EDMS默认采用Tesseract，可以自己后端封装。
 			- `OCR_BACKEND的默认值为 "ocr.backends.tesseract.Tesseract"`
