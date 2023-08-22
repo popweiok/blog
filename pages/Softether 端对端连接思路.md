@@ -1,13 +1,7 @@
 # Softether 端对端连接思路
 - ## 总部与分部使用不同的IP网段
-  
-  
-  
-  ![image-20230529154814916](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20230529154814916.png)
-  
-  
-  
-  要实现两个局域网不同IP网段的通信，需要使用VPN Server的3层交换功能，
+  ![image.png](../assets/image_1692689795744_0.png)
+- 要实现两个局域网不同IP网段的通信，需要使用VPN Server的3层交换功能，
   
   比如总部网络使用192.168.1.0网段，分部使用192.168.2.0网段。
 - ### 1 总部端
