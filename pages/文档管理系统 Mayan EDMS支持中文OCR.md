@@ -18,10 +18,10 @@
 					- ![image.png](../assets/image_1692681747170_0.png)
 			- 也可以使用以下命令配置下拉菜单中显示的默认语言：
 				- ```DOCUMENTS_LANGUAGE = 'zho'```
-- 修改完后重启服务
-- sudo systemctl restart supervisor
-  1
-  完成后如图
+			- 修改完后重启服务
+				- ````sudo systemctl restart supervisor
+			- 完成后如图
+				- ![image.png](../assets/image_1692681888275_0.png)
 - 3，上传OCR训练文件库
 - cd /usr/share/tesseract-ocr/4.00/tessdata
   ls
