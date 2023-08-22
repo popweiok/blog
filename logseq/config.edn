@@ -124,7 +124,7 @@
  :markdown/version 2
  :shortcuts {:ui/toggle-contents "meta+shift+c"}
  :feature/enable-journals? false
- :default-home {:page "OKWei`s LogSeq" :sidebar "contents"}
+ :default-home {:page "OKWei`s LogSeq" }
  :ui/show-brackets? true
  :journal/page-title-format "E, yyyy/MM/dd"
  :journal/file-name-format "yyyy-MM-dd"
