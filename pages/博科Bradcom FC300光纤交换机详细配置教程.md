@@ -22,4 +22,7 @@
 		- ![image.png](../assets/image_1692695924882_0.png).
 	- 如下图，Name中选择好刚创建的别名，然后在Member Selection List中选择存储V3700实际接的端口，这里为1,0，选中1,0，再点击中间的“Add Member >>”，完成端口的添加。这样一个别名就创建好了，其它5个别名也按此方法创建
 		- ![image.png](../assets/image_1692695957508_0.png)
+	- 接着开始创建Zone，如下图，选择中间的Zone选项栏，如下图，点击New Zone，输入ZONE name，点OK
+		- ![image.png](../assets/image_1692695986256_0.png)
+	- Name选中刚才创建的Zone，Member selection List中选择Aliases，选择该区域的两个端口，即esxi01_hba01和ibmv3700_spa01，选中点击Add Members添加至zone中，其它7个zone也同样方法添加。
 		-
