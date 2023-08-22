@@ -20,9 +20,8 @@
   ![image.png](../assets/image_1692689941663_0.png)
 - 点击3层交换机的【编辑】按钮，**为【BenDi】和【FenBu】虚拟HUB添加虚拟接口**
   
-  ![image-20230529160533457](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20230529160533457.png)
-  
-  ![image-20230529160614249](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20230529160614249.png)
+  ![image.png](../assets/image_1692689988862_0.png)
+- ![image-20230529160614249](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20230529160614249.png)
 - ### 2 分部端
   
   ![image-20230529160739231](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20230529160739231.png)
