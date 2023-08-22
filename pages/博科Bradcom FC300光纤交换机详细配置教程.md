@@ -97,17 +97,18 @@
 			  yingyongserver2_ibmv7000_spa;yingyongserver2_ibmv7000_spb”
 			  
 			  ```
-		- ### 4.启用配置
+	- ### 4.启用配置
+		- ```
+		  cfgenable “newcfg”
+		  cfgsave
+		  ```
+	- ### 最后show一下配置是否启用以及是否出错
+		- ```
+		  ```
+		- ### 2.zone创建：
 			- 第一台：
 				- ```
 				  ```
 			- 第二台：
 				- ```
 				  ```
-				- ### 2.zone创建：
-					- 第一台：
-						- ```
-						  ```
-					- 第二台：
-						- ```
-						  ```
