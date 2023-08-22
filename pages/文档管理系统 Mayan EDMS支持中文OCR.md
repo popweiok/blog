@@ -35,11 +35,8 @@
 		  chi_sim Chinese - Simplified chi_sim.traineddata
 		  chi_tra Chinese - Traditional chi_tra.traineddata
 		  ```
-		-
-		-
-- https://tesseract-ocr.github.io/tessdoc/Data-Files
-  1
-  这里我们下载chi_sim.traineddata简体中文就好了
+			- `https://tesseract-ocr.github.io/tessdoc/Data-Files`
+		- 我们下载chi_sim.traineddata简体中文就好了
 - https://github.com/tesseract-ocr/tessdata/raw/4.00/chi_sim.traineddata
   1
   下载完成后，上传到
