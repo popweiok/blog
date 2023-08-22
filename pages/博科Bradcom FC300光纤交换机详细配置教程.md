@@ -43,6 +43,14 @@
 			  alicreate “esix_02_hba01”,“1,3”
 			  alicreate “yingyongserver01_hba01”,“1,4”
 			  alicreate “yingyongserver02_hba01”,“1,5”
+			  ```
 		- 第二台交换机：
 			- ```
+			  alicreate “ibm_v7000_spa02”,“1,0”
+			  alicreate “ibm_v7000_spb02”,“1,1”
+			  alicreate “esix_01_hba02”,“1,2”
+			  alicreate “esix_02_hba02”,“1,3”
+			  alicreate “yingyongserver01_hba02”,“1,4”
+			  alicreate “yingyongserver02_hba02”,“1,5”
 			  ```
+		- ### 2.zone创建：
