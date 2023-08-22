@@ -11,11 +11,10 @@
   Mayan EDMS使用的标准是ISO 639-3，默认显示很多很多的语言，我们删去不要的，默认支持中文和英语
 	- 系统-设置-设置-文档
 		- ![image.png](../assets/image_1692681584567_0.png)
-- DOCUMENTS_LANGUAGE_CODES，
-  例如，将列表缩小为仅英语和中文
-- DOCUMENTS_LANGUAGE_CODES = ('eng', 'zho')
-  1
-  zho在ISO 639表示中文，其他语言在https://tesseract-ocr.github.io/tessdoc/Data-Files查找
+		- DOCUMENTS_LANGUAGE_CODES，
+		  例如，将列表缩小为仅英语和中文
+		- `DOCUMENTS_LANGUAGE_CODES = ('eng', 'zho')`
+		- zho在ISO 639表示中文，其他语言在https://tesseract-ocr.github.io/tessdoc/Data-Files查找
 - 也可以使用以下命令配置下拉菜单中显示的默认语言：
 - DOCUMENTS_LANGUAGE = 'zho'
   1
