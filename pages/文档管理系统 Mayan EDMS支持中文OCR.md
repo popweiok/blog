@@ -31,8 +31,10 @@
 			- ![image.png](../assets/image_1692682067200_0.png)
 		- 下载traineddata地址
 		  找到
-		  chi_sim Chinese - Simplified chi_sim.traineddata
+		- chi_sim Chinese - Simplified chi_sim.traineddata
 		  chi_tra Chinese - Traditional chi_tra.traineddata
+		- ```
+		-
 - https://tesseract-ocr.github.io/tessdoc/Data-Files
   1
   这里我们下载chi_sim.traineddata简体中文就好了
