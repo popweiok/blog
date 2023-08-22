@@ -121,7 +121,96 @@
 		  ```
 			- Index Port Address Media Speed State Proto
 				- ```
+				  0 0 010000 id N8 Online FC F-Port 50:05:07:68:03:09:fb:d8
+				  1 1 010100 id N8 Online FC F-Port 50:05:07:68:03:09:fb:d9
+				  2 2 010200 id N8 Online FC F-Port 21:00:00:24:ff:0e:19:66
+				  3 3 010300 id N8 Online FC F-Port 10:00:8c:7c:ff:65:e2:49
+				  4 4 010400 id N8 Online FC F-Port 10:00:00:05:1e:fd:98:8c
+				  5 5 010500 id N8 Online FC F-Port 10:00:00:05:1e:fd:97:48
+				  6 6 010600 id N8 No_Light FC
+				  7 7 010700 id N8 No_Light FC
+				  8 8 010800 – N8 No_Module FC (No POD License) Disabled
+				  9 9 010900 – N8 No_Module FC (No POD License) Disabled
+				  10 10 010a00 – N8 No_Module FC (No POD License) Disabled
+				  11 11 010b00 – N8 No_Module FC (No POD License) Disabled
+				  12 12 010c00 – N8 No_Module FC (No POD License) Disabled
+				  13 13 010d00 – N8 No_Module FC (No POD License) Disabled
+				  14 14 010e00 – N8 No_Module FC (No POD License) Disabled
+				  15 15 010f00 – N8 No_Module FC (No POD License) Disabled
+				  16 16 011000 – N8 No_Module FC (No POD License) Disabled
+				  17 17 011100 – N8 No_Module FC (No POD License) Disabled
+				  18 18 011200 – N8 No_Module FC (No POD License) Disabled
+				  19 19 011300 – N8 No_Module FC (No POD License) Disabled
+				  20 20 011400 – N8 No_Module FC (No POD License) Disabled
+				  21 21 011500 – N8 No_Module FC (No POD License) Disabled
+				  22 22 011600 – N8 No_Module FC (No POD License) Disabled
+				  23 23 011700 – N8 No_Module FC (No POD License) Disabled
+				  
+				  zoneshow：
+				  
+				  swd77:admin> zoneshow
+				  Defined configuration:
+				  cfg: newconfig
+				  esxi01_v3700spa; esxi01_v3700spb; esxi02_v3700spa;
+				  esxi02_v3700spb; yingyongserver1_v3700spa;
+				  yingyongserver1_v3700spb; yingyongserver2_v3700spa;
+				  yingyongserver2_v3700spb
+				  zone: esxi01_v3700spa
+				  esxi01_hba01; ibmv3700_spa01
+				  zone: esxi01_v3700spb
+				  esxi01_hba01; ibmv3700_spb01
+				  zone: esxi02_v3700spa
+				  esxi02_hba01; ibmv3700_spa01
+				  zone: esxi02_v3700spb
+				  esxi02_hba01; ibmv3700_spb01
+				  zone: yingyongserver1_v3700spa
+				  ibmv3700_spa01; yingyongserver1_hba01
+				  zone: yingyongserver1_v3700spb
+				  ibmv3700_spb01; yingyongserver1_hba01
+				  zone: yingyongserver2_v3700spa
+				  ibmv3700_spa01; yingyongserver2_hba01
+				  zone: yingyongserver2_v3700spb
+				  ibmv3700_spb01; yingyongserver2_hba01
+				  alias: esxi01_hba01
+				  
+				  0; 1,2
+				  alias: esxi02_hba01
+				  1,3
+				  alias: ibmv3700_spa01
+				  1,0
+				  alias: ibmv3700_spb01
+				  1,1
+				  alias: yingyongserver1_hba01
+				  1,4
+				  alias: yingyongserver2_hba01
+				  1,5
+				  
+				  Effective configuration:
+				  cfg: newconfig
+				  zone: esxi01_v3700spa
+				  1,2
+				  1,0
+				  zone: esxi01_v3700spb
+				  1,2
+				  1,1
+				  zone: esxi02_v3700spa
+				  1,3
+				  1,0
+				  zone: esxi02_v3700spb
+				  1,3
+				  1,1
+				  zone: yingyongserver1_v3700spa
+				  1,0
+				  1,4
+				  zone: yingyongserver1_v3700spb
+				  1,1
+				  1,4
+				  zone: yingyongserver2_v3700spa
+				  1,0
+				  1,5
+				  zone: yingyongserver2_v3700spb
+				  1,1
+				  1,5
+				  
 				  ```
-			- 第二台：
-				- ```
-				  ```
+				-
