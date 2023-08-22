@@ -1,4 +1,4 @@
 ### 其实一直以来我都有一个 Wiki 梦：想把自己学到的东西，踩过的坑都记录下来，以后就不用再反复搜索关键词，且随着年纪的增大，记忆力不断下降，悲催啊。。。
 - ### 这里也许会成为我最经常逗留的地方。感谢 Logseg 。
-- ...每个页面下方，都有通过 双向链接 生成的“Linked References”和“Unlinked References”两个区域。
+- 每个页面下方，都有通过 双向链接 生成的“Linked References”和“Unlinked References”两个区域。
 - ![starry-sky-1948523_1280.jpg](../assets/starry-sky-1948523_1280_1692609541707_0.jpg)
