@@ -23,11 +23,11 @@
 			- 完成后如图
 				- ![image.png](../assets/image_1692681888275_0.png)
 - ### 3，上传OCR训练文件库
-- ```cd /usr/share/tesseract-ocr/4.00/tessdata
-  ls````
-  1
-  2
-  默认是没有zho.traineddata这个训练文件的
+	- ```
+	  cd /usr/share/tesseract-ocr/4.00/tessdata
+	  ls
+	  ```
+- 默认是没有zho.traineddata这个训练文件的
   下载traineddata地址
   找到
   chi_sim Chinese - Simplified chi_sim.traineddata
