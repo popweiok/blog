@@ -3,11 +3,11 @@
   安装完后报错OCR识别中文报错了
   Exception calling Tesseract with language option: zho; RAN: /usr/bin/tesseract - - -l zhoSTDOUT: STDERR: Error opening data file /usr/share/tesseract-ocr/4.00/tessdata/zho.traineddata Please make sure the TESSDATA_PREFIX environment variable is set to your “tessdata” directory. Failed loading language ‘zho’ Tesseract couldn’t load any languages! Could not initialize tesseract. The requested OCR language “zho” is not available and needs to be installed.
 - 文档管理系统 Mayan EDMS，安装完默认OCR不支持中文的。
-  文档管理系统 Mayan EDMS默认采用Tesseract，可以自己后端封装。
-	- `OCR_BACKEND的默认值为 "ocr.backends.tesseract.Tesseract"`
-- 要在使用Tesseract时为OCR更多语言添加支持，请安装相应的语言文件。如果使用基于Debian的操作系统，此命令将显示可用的语言文件：
-- apt-cache search tesseract-ocr
-  1
+	- 文档管理系统 Mayan EDMS默认采用Tesseract，可以自己后端封装。
+		- `OCR_BACKEND的默认值为 "ocr.backends.tesseract.Tesseract"`
+	- 要在使用Tesseract时为OCR更多语言添加支持，请安装相应的语言文件。如果使用基于Debian的操作系统，此命令将显示可用的语言文件：
+- `apt-cache search tesseract-ocr`
+  
   2.步骤
   Mayan EDMS使用的标准是ISO 639-3，默认显示很多很多的语言，我们删去不要的，默认支持中文和英语
 - 系统-设置-设置-文档
