@@ -10,6 +10,7 @@
 - ## 2.步骤
   Mayan EDMS使用的标准是ISO 639-3，默认显示很多很多的语言，我们删去不要的，默认支持中文和英语
 	- 系统-设置-设置-文档
+		- ![image.png](../assets/image_1692681584567_0.png)
 - DOCUMENTS_LANGUAGE_CODES，
   例如，将列表缩小为仅英语和中文
 - DOCUMENTS_LANGUAGE_CODES = ('eng', 'zho')
