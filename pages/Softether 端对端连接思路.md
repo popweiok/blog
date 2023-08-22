@@ -6,16 +6,12 @@
   比如总部网络使用192.168.1.0网段，分部使用192.168.2.0网段。
 - ### 1 总部端
 - ##### 1.1 新建两个虚拟HUB，分别为BenDi及FenBu
-  
-  ![image-20230529155456473](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20230529155456473.png)
+- ![image.png](../assets/image_1692689850109_0.png)
 - ##### 1.1.1 【本地网桥设置】选择BenDi (本地)虚拟HUB和网卡
 - ######  虚拟HUB建立与总部网络的连接，点击【本地网桥设置】，选择【BenDi】虚拟HUB和网卡，点击【**添加本地网桥**】：
-  
-  ![image-20230529155813317](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20230529155813317.png)
+- ![image.png](../assets/image_1692689869891_0.png)
 - ##### 1.1.2 FenBu（分部）创建用户密码
 - ###### 虚拟HUB负责Bridge端(分部网络)的VPN连接，进入到【FenBu】虚拟HUB的管理，点击【**管理用户**】，创建用户和密码，
-  
-  ![image-20230529160122618](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20230529160122618.png)
 - ##### 1.1.3 创建3层交换机并设定本地总部段IP（192.168.1.x）及分部段IP（192.168.2.x）
   
   **创建3层交换机【route】**
