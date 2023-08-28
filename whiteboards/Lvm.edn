@@ -1,0 +1,55 @@
+{:blocks (
+{:block/content "![linux_lvm (1).png](../assets/linux_lvm_(1)_1693198932772_0.png)"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "64ec2a06-ce41-4201-b026-b35a5bf0318a"}
+:block/parent 
+{:block/uuid #uuid "64ec2a06-ce41-4201-b026-b35a5bf0318a"}
+:block/properties 
+{}
+:block/uuid #uuid "64ec2a44-e720-43a9-97d2-8ae45bdf11ec"} 
+{:block/created-at 1693198956697
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:blockType "B"
+:stroke ""
+:rotation 0
+:collapsed false
+:borderRadius 8
+:index 0
+:scale [1 1]
+:pageId "64ec2a44-e720-43a9-97d2-8ae45bdf11ec"
+:scaleLevel "md"
+:fill ""
+:compact true
+:isAutoResizing true
+:type "logseq-portal"
+:size [696 755.640625]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "0028e0c0-4560-11ee-b306-1571d5770eb1"
+:noFill false
+:point [136 120]
+:parentId "64ec2a06-ce41-4201-b026-b35a5bf0318a"
+:collapsedHeight 0
+:nonce 1693198911812}}
+:block/updated-at 1693198956697})
+:pages (
+{:block/uuid #uuid "64ec2a06-ce41-4201-b026-b35a5bf0318a"
+:block/properties 
+{:ls-type :whiteboard-page
+:logseq.tldraw.page 
+{:id "64ec2a06-ce41-4201-b026-b35a5bf0318a"
+:name "lvm"
+:bindings 
+{}
+:nonce 1
+:assets []
+:shapes-index ("0028e0c0-4560-11ee-b306-1571d5770eb1")}}
+:block/updated-at 1693198956697
+:block/created-at 1693198854666
+:block/type "whiteboard"
+:block/name "lvm"
+:block/original-name "Lvm"})}
