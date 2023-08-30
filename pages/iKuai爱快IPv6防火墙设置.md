@@ -23,4 +23,5 @@
 		- 【**进接口**】和【**出接口**】：一般为 **WAN** 和 **LAN**，根据实际情况选择。
 		  logseq.order-list-type:: number
 - ## 全局准出
--
+	- ![image.png](../assets/image_1693376515287_0.png)
+	-
