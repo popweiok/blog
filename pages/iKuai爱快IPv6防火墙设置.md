@@ -38,6 +38,10 @@
 			  logseq.order-list-type:: number
 				- logseq.order-list-type:: number
 				  ```
+				  "关闭"：这个设置可能意味着ACL规则对数据包的方向不做任何检查或匹配。换句话说，
+				  规则将会无视数据包的方向，只根据其它条件（如源IP地址、目标IP地址、协议类型等）来决定
+				  是否应用。在某些情况下，"关闭"也可能意味着ACL规则完全不会被应用，但这取决于具体设备或
+				  软件的设计。
 				  ```
 		- 【**进接口**】和【**出接口**】：一般为 **LAN** 和 **WAN**，根据实际情况选择。
 		  logseq.order-list-type:: number
