@@ -58,7 +58,7 @@
 			- 【**连接方向匹配**】：**关闭**
 			  logseq.order-list-type:: number
 			- logseq.order-list-type:: number
-			  【**目的地址**】："**::de62:94ff:fe1f:c19a/::ffff:ffff:ffff:ffff**"
+			  【**目的地址**】："**::3697:f6ff:fe8f:7436/::ffff:ffff:ffff:ffff**"
 				- 这是 IPv6 负掩码写法。负掩码的主要作用是用于 IPv6 地址的路由选择。
 				  logseq.order-list-type:: number
 				- 负掩码是一个全0的位串后面跟着一个全1的位串，全1的位串表示地址中不变的部分，所以使用这种写法前缀变化不会影响ACL规则的效果。
@@ -67,7 +67,7 @@
 					  logseq.order-list-type:: number
 					- 只匹配"主机部分"的负掩码写法应该写为 "2408:821b:821c:821d:de62:94ff:fe1f:c19a/0000:0000:0000:0000:ffff:ffff:ffff:ffff".
 					  logseq.order-list-type:: number
-			- 【**目的端口**】："5055"
+			- 【**目的端口**】："8006"
 			  logseq.order-list-type:: number
 			- 【**进接口**】和【**出接口**】：一般为 **WAN** 和 **LAN**，根据实际情况选择。
 			  logseq.order-list-type:: number
