@@ -40,6 +40,16 @@
 						- **erase 0x9f000000 +0x20000**
 							- ![image.png](../assets/image_1693814857027_0.png)
 							-
+						- **在 U-Boot 向 Flash 写入数据：**
+						  向 Flash 写入数据的大小可以是任意正整数
+						- **cp.b *<源地址>* *<目的地址>* *<长度>***
+						- 其中
+						  cp.b 表示以字节为单位进行写入
+						  源地址为通过 tftpboot 命令获取的文件数据的存放地址
+						  目的地址为 Flash 地址
+						  长度为通过 tftpboot 命令获取的文件的大小，16进制表示，带0x前缀
+						- 以在 TP-LINK 路由中刷入 U-Boot 为例：
+						- **cp.b 0x80000000 0x9f000000 0x20000**
 		- 文件上传完成
 		  logseq.order-list-type:: number
 			- ![image.png](../assets/image_1693813852092_0.png)
