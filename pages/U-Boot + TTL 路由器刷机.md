@@ -1,24 +1,22 @@
 ## 思路
-	- 连接TTL，GND接GND、路由器[[$green]]==RX==接TTL的[[$green]]==TX==、路由器[[$red]]==TX==接TTL的[[$red]]==RX==，也就是 **RX和TX反过来接**
+	- ### 连接TTL，GND接GND、路由器[[$green]]==RX==接TTL的[[$green]]==TX==、路由器[[$red]]==TX==接TTL的[[$red]]==RX==，也就是 **RX和TX反过来接**
 	  logseq.order-list-type:: number
 	  collapsed:: true
 		- 软件设置
 		  logseq.order-list-type:: number
-		  collapsed:: true
 			- ![image.png](../assets/image_1693813550090_0.png)
 			- ![image.png](../assets/image_1693813564326_0.png)
 			-
-	- 路由器重新上电可看到正常显示启动数据，在启动倒数几秒内按对应的快捷键中断启动
+	- ### 路由器重新上电可看到正常显示启动数据，在启动倒数几秒内按对应的快捷键中断启动
 	  logseq.order-list-type:: number
 	  collapsed:: true
 		- ![image.png](../assets/image_1693813615770_0.png)
+		  collapsed:: true
 			- *竞斗云为不停的敲F键和Enter键）进入bootloader，我们要在这个模式里面进行刷机*
-	- 通过TFTP上传固件写入内存
+	- ### 通过TFTP上传固件写入内存
 	  logseq.order-list-type:: number
-	  collapsed:: true
 		- 先连接网线到电脑，然后输入”printenv”命令查看 U-Boot 中的serverip IP 地址信息，ipaddr 表示 U-Boot 即路由使用的 IP 地址，serverip 表示服务器即 PC 机使用的 IP 地址”192.168.1.25″
 		  logseq.order-list-type:: number
-		  collapsed:: true
 			- ![image.png](../assets/image_1693813676155_0.png)
 		- 在电脑端 网络设置里面设置IPV4地址为TFTP服务器地址”192.168.1.25″并确定保存
 		  logseq.order-list-type:: number
@@ -36,7 +34,7 @@
 		  logseq.order-list-type:: number
 		  collapsed:: true
 			- ![image.png](../assets/image_1693813852092_0.png)
-	- 从内存写入QSPI Flash
+	- ### 从内存写入QSPI Flash
 	  logseq.order-list-type:: number
 	  collapsed:: true
 		- ***警告：命令需谨慎，以防万一做好备份，ART没了就没灵魂了！！！***
