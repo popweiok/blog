@@ -15,19 +15,20 @@
 			- *竞斗云为不停的敲F键和Enter键）进入bootloader，我们要在这个模式里面进行刷机*
 	- ### 通过TFTP上传固件写入内存
 	  logseq.order-list-type:: number
-	  collapsed:: true
 		- 先连接网线到电脑，然后输入”printenv”命令查看 U-Boot 中的serverip IP 地址信息，ipaddr 表示 U-Boot 即路由使用的 IP 地址，serverip 表示服务器即 PC 机使用的 IP 地址**”192.168.1.25″**
 		  logseq.order-list-type:: number
+		  collapsed:: true
 			- ![image.png](../assets/image_1693813676155_0.png)
 		- 在电脑端 网络设置里面设置IPV4地址为TFTP服务器地址**”192.168.1.25″**并确定保存
 		  logseq.order-list-type:: number
+		  collapsed:: true
 			- ![image.png](../assets/image_1693813729822_0.png)
 		- 打开 TFTPd32，Current Directory 选择要上传文件的目录（一般放在软件目录里），Server interfaces 选择本机跟路由相连的网卡 (参考刚才设置的 IP 地址)
 		  logseq.order-list-type:: number
+		  collapsed:: true
 			- ![image.png](../assets/image_1693813758301_0.png)
 		- tftp上传固件：**”tftpboot <文件名>”**，输入”tftpboot a.bin”，tftpboot 命令用于向 TFTP 服务器请求a.bin文件，并存入内存
 		  logseq.order-list-type:: number
-		  collapsed:: true
 			- ![image.png](../assets/image_1693813800163_0.png)
 				- tftpboot 命令在无歧义的情况下可简写为 tftp
 				- **tftp  <内存地址>  <文件名>**
