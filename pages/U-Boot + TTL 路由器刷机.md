@@ -1,6 +1,7 @@
 ## 思路
 	- 连接TTL，GND接GND、路由器[[$green]]==RX==接TTL的[[$green]]==TX==、路由器[[$red]]==TX==接TTL的[[$red]]==RX==，也就是 **RX和TX反过来接**
 	  logseq.order-list-type:: number
+	  collapsed:: true
 		- 软件设置
 		  logseq.order-list-type:: number
 		  collapsed:: true
@@ -14,6 +15,7 @@
 			- *竞斗云为不停的敲F键和Enter键）进入bootloader，我们要在这个模式里面进行刷机*
 	- 通过TFTP上传固件写入内存
 	  logseq.order-list-type:: number
+	  collapsed:: true
 		- 先连接网线到电脑，然后输入”printenv”命令查看 U-Boot 中的serverip IP 地址信息，ipaddr 表示 U-Boot 即路由使用的 IP 地址，serverip 表示服务器即 PC 机使用的 IP 地址”192.168.1.25″
 		  logseq.order-list-type:: number
 		  collapsed:: true
@@ -36,6 +38,7 @@
 			- ![image.png](../assets/image_1693813852092_0.png)
 	- 从内存写入QSPI Flash
 	  logseq.order-list-type:: number
+	  collapsed:: true
 		- ***警告：命令需谨慎，以防万一做好备份，ART没了就没灵魂了！！！***
 		  logseq.order-list-type:: number
 		- *本设备为IPQ4019单SPI FLASH（NAND Flash使用nand 命令烧录），以下使用本设备SPI FLASH为例：*
@@ -50,4 +53,5 @@
 			  例如：”sf write 0x84000000 0x180000 ${filesize}”
 			  把内存0x8400 0000处的数据, 写入flash的偏移0x180000, 写入数据长度为下载文件大小, 操作偏移和长度最小单位是Byte
 				- ![image.png](../assets/image_1693814034304_0.png)
-			- logseq.order-list-type:: number
+			- 重启命令:”reset”
+			  logseq.order-list-type:: number
