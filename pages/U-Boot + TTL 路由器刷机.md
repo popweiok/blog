@@ -73,3 +73,9 @@
 				- ![image.png](../assets/image_1693814034304_0.png)
 			- 重启命令:”reset”
 			  logseq.order-list-type:: number
+	-
+	-
+-
+-
+-
+- logseq.order-list-type:: number
