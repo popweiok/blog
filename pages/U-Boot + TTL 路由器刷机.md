@@ -36,6 +36,10 @@
 						  如果擦出大小为 0x12345 (72KB)，则此大小未对齐，需要使用比它大但又最接近的是 0x10000 倍数的大小，即 0x20000 (128KB)*
 						- **erase *<flash地址>* +*<擦除大小>***
 						- **其中 Flash 地址在不同的芯片下有所不同**
+						- 以在 TP-LINK 路由中刷入 U-Boot 为例：
+						- **erase 0x9f000000 +0x20000**
+							- ![image.png](../assets/image_1693814857027_0.png)
+							-
 		- 文件上传完成
 		  logseq.order-list-type:: number
 			- ![image.png](../assets/image_1693813852092_0.png)
