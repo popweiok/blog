@@ -20,5 +20,12 @@
 			- ![image.png](../assets/image_1693813852092_0.png)
 	- 从内存写入QSPI Flash
 		- ***警告：命令需谨慎，以防万一做好备份，ART没了就没灵魂了！！！***
-		- 本设备为IPQ4019单SPI FLASH（NAND Flash使用nand 命令烧录），以下使用本设备SPI FLASH为例：
--
+		- *本设备为IPQ4019单SPI FLASH（NAND Flash使用nand 命令烧录），以下使用本设备SPI FLASH为例：*
+			- 初始化芯片SPI总线FLASH驱动: “sf probe;”
+			- 擦除 Flash，任擦除分区的命令，可以指定偏移off 和大小size 擦除，如果不输入从参数，则整片擦除，但是此命令会跳过坏块，SPI FLASH速度慢可能需要5分钟。”sf erase <flash地址> +<擦除大小>”
+			  例如”sf erase 0x180000 +0x1a00000;”-
+			- 写内存数据到flash，”sf write <源地址> <目的地址> <长度>”
+			  例如：”sf write 0x84000000 0x180000 ${filesize}”
+			  把内存0x8400 0000处的数据, 写入flash的偏移0x180000, 写入数据长度为下载文件大小, 操作偏移和长度最小单位是Byte
+				- ![image.png](../assets/image_1693814034304_0.png)
+				-
