@@ -10,7 +10,9 @@
 	- 通过TFTP上传固件写入内存
 		- 先连接网线到电脑，然后输入”printenv”命令查看 U-Boot 中的serverip IP 地址信息，ipaddr 表示 U-Boot 即路由使用的 IP 地址，serverip 表示服务器即 PC 机使用的 IP 地址”192.168.1.25″
 			- ![image.png](../assets/image_1693813676155_0.png)
-			-
+		- 在电脑端 网络设置里面设置IPV4地址为TFTP服务器地址”192.168.1.25″并确定保存
+			- ![image.png](../assets/image_1693813729822_0.png)
+		-
 	-
 	- 从内存写入QSPI Flash
 	-
