@@ -6,9 +6,11 @@
 			-
 	- 路由器重新上电可看到正常显示启动数据，在启动倒数几秒内按对应的快捷键中断启动
 		- ![image.png](../assets/image_1693813615770_0.png)
-		-
-		- 竞斗云为不停的敲F键和Enter键）进入bootloader，我们要在这个模式里面进行刷机
+			- *竞斗云为不停的敲F键和Enter键）进入bootloader，我们要在这个模式里面进行刷机*
 	- 通过TFTP上传固件写入内存
+		- 先连接网线到电脑，然后输入”printenv”命令查看 U-Boot 中的serverip IP 地址信息，ipaddr 表示 U-Boot 即路由使用的 IP 地址，serverip 表示服务器即 PC 机使用的 IP 地址”192.168.1.25″
+			- ![image.png](../assets/image_1693813676155_0.png)
+			-
 	-
 	- 从内存写入QSPI Flash
 	-
