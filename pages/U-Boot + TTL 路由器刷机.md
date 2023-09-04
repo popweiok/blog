@@ -26,6 +26,7 @@
 			- ![image.png](../assets/image_1693813758301_0.png)
 		- tftp上传固件：**”tftpboot <文件名>”**，输入”tftpboot a.bin”，tftpboot 命令用于向 TFTP 服务器请求a.bin文件，并存入内存
 		  logseq.order-list-type:: number
+		  collapsed:: true
 			- ![image.png](../assets/image_1693813800163_0.png)
 				- tftpboot 命令在无歧义的情况下可简写为 tftp
 				- **tftp  <内存地址>  <文件名>**
@@ -50,12 +51,12 @@
 						  长度为通过 tftpboot 命令获取的文件的大小，16进制表示，带0x前缀
 						- 以在 TP-LINK 路由中刷入 U-Boot 为例：
 						- **cp.b 0x80000000 0x9f000000 0x20000**
+							- ![image.png](../assets/image_1693815020145_0.png)
 		- 文件上传完成
 		  logseq.order-list-type:: number
 			- ![image.png](../assets/image_1693813852092_0.png)
 	- ### 从内存写入QSPI Flash
 	  logseq.order-list-type:: number
-	  collapsed:: true
 		- ***警告：命令需谨慎，以防万一做好备份，ART没了就没灵魂了！！！***
 		  logseq.order-list-type:: number
 		- *本设备为IPQ4019单SPI FLASH（NAND Flash使用nand 命令烧录），以下使用本设备SPI FLASH为例：*
