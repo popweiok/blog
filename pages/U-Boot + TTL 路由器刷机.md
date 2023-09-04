@@ -12,7 +12,11 @@
 			- ![image.png](../assets/image_1693813676155_0.png)
 		- 在电脑端 网络设置里面设置IPV4地址为TFTP服务器地址”192.168.1.25″并确定保存
 			- ![image.png](../assets/image_1693813729822_0.png)
-		-
+		- 打开 TFTPd32，Current Directory 选择要上传文件的目录（一般放在软件目录里），Server interfaces 选择本机跟路由相连的网卡 (参考刚才设置的 IP 地址)
+			- ![image.png](../assets/image_1693813758301_0.png)
+		- tftp上传固件：”tftpboot <文件名>”，输入”tftpboot a.bin”，tftpboot 命令用于向 TFTP 服务器请求a.bin文件，并存入内存
+			- ![image.png](../assets/image_1693813800163_0.png)
+			-
 	-
 	- 从内存写入QSPI Flash
 	-
