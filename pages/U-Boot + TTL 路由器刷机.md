@@ -1,7 +1,5 @@
 ## 思路
-collapsed:: true
 	- 连接TTL，GND接GND、路由器[[$green]]==RX==接TTL的[[$green]]==TX==、路由器[[$red]]==TX==接TTL的[[$red]]==RX==，也就是 **RX和TX反过来接**
-	  collapsed:: true
 		- 软件设置
 		  collapsed:: true
 			- ![image.png](../assets/image_1693813550090_0.png)
@@ -10,10 +8,8 @@ collapsed:: true
 	- 路由器重新上电可看到正常显示启动数据，在启动倒数几秒内按对应的快捷键中断启动
 	  collapsed:: true
 		- ![image.png](../assets/image_1693813615770_0.png)
-		  collapsed:: true
 			- *竞斗云为不停的敲F键和Enter键）进入bootloader，我们要在这个模式里面进行刷机*
 	- 通过TFTP上传固件写入内存
-	  collapsed:: true
 		- 先连接网线到电脑，然后输入”printenv”命令查看 U-Boot 中的serverip IP 地址信息，ipaddr 表示 U-Boot 即路由使用的 IP 地址，serverip 表示服务器即 PC 机使用的 IP 地址”192.168.1.25″
 		  collapsed:: true
 			- ![image.png](../assets/image_1693813676155_0.png)
@@ -30,15 +26,12 @@ collapsed:: true
 		  collapsed:: true
 			- ![image.png](../assets/image_1693813852092_0.png)
 	- 从内存写入QSPI Flash
-	  collapsed:: true
 		- ***警告：命令需谨慎，以防万一做好备份，ART没了就没灵魂了！！！***
 		- *本设备为IPQ4019单SPI FLASH（NAND Flash使用nand 命令烧录），以下使用本设备SPI FLASH为例：*
-		  collapsed:: true
 			- 初始化芯片SPI总线FLASH驱动: “sf probe;”
 			- 擦除 Flash，任擦除分区的命令，可以指定偏移off 和大小size 擦除，如果不输入从参数，则整片擦除，但是此命令会跳过坏块，SPI FLASH速度慢可能需要5分钟。”sf erase <flash地址> +<擦除大小>”
 			  例如”sf erase 0x180000 +0x1a00000;”-
 			- 写内存数据到flash，”sf write <源地址> <目的地址> <长度>”
-			  collapsed:: true
 			  例如：”sf write 0x84000000 0x180000 ${filesize}”
 			  把内存0x8400 0000处的数据, 写入flash的偏移0x180000, 写入数据长度为下载文件大小, 操作偏移和长度最小单位是Byte
 				- ![image.png](../assets/image_1693814034304_0.png)
