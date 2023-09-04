@@ -19,6 +19,6 @@
 		- 文件上传完成
 			- ![image.png](../assets/image_1693813852092_0.png)
 	- 从内存写入QSPI Flash
-	-
--
+		- ***警告：命令需谨慎，以防万一做好备份，ART没了就没灵魂了！！！***
+		- 本设备为IPQ4019单SPI FLASH（NAND Flash使用nand 命令烧录），以下使用本设备SPI FLASH为例：
 -
