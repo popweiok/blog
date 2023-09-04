@@ -28,8 +28,10 @@
 		  logseq.order-list-type:: number
 			- ![image.png](../assets/image_1693813800163_0.png)
 				- tftpboot 命令在无歧义的情况下可简写为 tftp
-				- **tftp  <内存地址>* *<文件名>***
-				- 在 MIPS 架构下内存地址从 0x80000000 开始，一般也选择 0x80000000，因为这样可以尽可能使用更多的内存
+				- **tftp  <内存地址>  <文件名>**
+				- 在 MIPS 架构下内存地址从 0x80000000 开始，一般也选择 0x80000000，因为这样可以尽可能使用更多的内存，如：
+					- ![image.png](../assets/image_1693814620395_0.png)
+					-
 		- 文件上传完成
 		  logseq.order-list-type:: number
 		  collapsed:: true
