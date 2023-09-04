@@ -18,8 +18,7 @@
 			- ![image.png](../assets/image_1693813800163_0.png)
 		- 文件上传完成
 			- ![image.png](../assets/image_1693813852092_0.png)
-			-
-	-
 	- 从内存写入QSPI Flash
 	-
+-
 -
