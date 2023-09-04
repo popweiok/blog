@@ -16,6 +16,8 @@
 			- ![image.png](../assets/image_1693813758301_0.png)
 		- tftp上传固件：”tftpboot <文件名>”，输入”tftpboot a.bin”，tftpboot 命令用于向 TFTP 服务器请求a.bin文件，并存入内存
 			- ![image.png](../assets/image_1693813800163_0.png)
+		- 文件上传完成
+			- ![image.png](../assets/image_1693813852092_0.png)
 			-
 	-
 	- 从内存写入QSPI Flash
