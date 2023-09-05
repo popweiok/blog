@@ -2,7 +2,7 @@
 - NAT有4个类型，它们分别是：NAT1、NAT2、NAT3、NAT4
 	- **NAT1: Full Cone NAT，全锥形NAT**
 		- [[$red]]==一对多==，路由器的一个端口可以和不同外网设备的不同端口进行交互
-		- 最宽松的网络环境，一般用于P2P组网，安全性最差。
+		- 最宽松的网络环境，一般用于P2P组网，安全性最差，路由器中的DZM就属于全锥形
 	- NAT2: Address-Restricted Cone NAT，受限锥型NAT，相比NAT1，NAT2 增加了地址限制，也就是IP受限，而端口不受限。
 	- NAT3: Port-Restricted Cone NAT，端口受限锥型，相比NAT2，NAT3 又增加了端口限制，也就是说IP、端口都受限。
 	- NAT4: Symmetric NAT，对称型NAT，
