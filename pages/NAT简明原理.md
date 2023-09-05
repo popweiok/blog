@@ -12,4 +12,5 @@
 	- PC端建议使用NatTypeTest进行测试
 	- ![image.png](../assets/image_1693901512004_0.png)
 	- ![image.png](../assets/image_1693901710208_0.png)
+	- ![image.png](../assets/image_1693901974217_0.png)
 	-
