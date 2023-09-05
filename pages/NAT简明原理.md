@@ -1,4 +1,5 @@
 - NAT（Network Address Translation网络地址转换）是指将IP数据包头中的IP地址转换为另一个IP地址的过程
 - NAT有4个类型，它们分别是：NAT1、NAT2、NAT3、NAT4
 	- NAT1: Full Cone NAT，全锥形NAT
-		- 最宽松的网络环境，一般。
+		- 一对多，路由器的一个端口可以和不同
+		- 最宽松的网络环境，一般用于P2P组网，安全性最差。
