@@ -5,6 +5,7 @@
 		- 最宽松的网络环境，一般用于P2P组网，安全性最差，路由器中的DZM就属于全锥形
 		- ![image.png](../assets/image_1693902595217_0.png)
 	- NAT2: Address-Restricted Cone NAT，受限锥型NAT，相比NAT1，NAT2 增加了地址限制，也就是IP受限，而端口不受限。
+		- 当
 	- NAT3: Port-Restricted Cone NAT，端口受限锥型，相比NAT2，NAT3 又增加了端口限制，也就是说IP、端口都受限。
 	- NAT4: Symmetric NAT，对称型NAT，
 		- [[$red]]==一对一==，路由器的一个端口只能和一个外网设备一个端口进行交互
