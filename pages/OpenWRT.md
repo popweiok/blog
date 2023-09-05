@@ -1,5 +1,5 @@
 - [[OpenWRT扩容]]
-- [[交换机设置]]
+- [[交换机设置(openwrt)]]
 - [[Cloudflare  Zero Trust]]
 - [[OpenWRT防火墙设置]]
 - [[Windows通过局域网用Wireshark抓openwrt包]]
