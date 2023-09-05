@@ -6,5 +6,5 @@
 	- NAT2: Address-Restricted Cone NAT，受限锥型NAT，相比NAT1，NAT2 增加了地址限制，也就是IP受限，而端口不受限。
 	- NAT3: Port-Restricted Cone NAT，端口受限锥型，相比NAT2，NAT3 又增加了端口限制，也就是说IP、端口都受限。
 	- NAT4: Symmetric NAT，对称型NAT，
-		- 一对一，
+		- [[$red]]==一对一==，路由器的一个端口只能和一个外网设备一个端口进行交互
 		- 对称型NAT具有端口受限锥型的受限特性，内部地址每一次请求一个特定的外部地址，都可能会绑定到一个新的端口号。
