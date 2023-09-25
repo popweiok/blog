@@ -6,6 +6,7 @@
 		- ![image.png](../assets/image_1693902595217_0.png)
 	- NAT2: Address-Restricted Cone NAT，受限锥型NAT，相比NAT1，NAT2 增加了地址限制，也就是IP受限，而端口不受限。
 		- ****当服务器向主机发送数据时，如果主机的100端口之前给服务器3.3.3.3的任意端口发送过数据，则路由器会将数据包转发给主机的100端口，否则路由器拒绝转发****
+		- ![image.png](../assets/image_1693903705717_0.png)
 	- NAT3: Port-Restricted Cone NAT，端口受限锥型，相比NAT2，NAT3 又增加了端口限制，也就是说IP、端口都受限。
 	- NAT4: Symmetric NAT，对称型NAT，
 		- [[$red]]==一对一==，路由器的一个端口只能和一个外网设备一个端口进行交互
