@@ -47,6 +47,7 @@
   I:* If#= 0 Alt= 1 #EPs= 1 Cls=09(hub  ) Sub=00 Prot=02 Driver=hub
   E:  Ad=81(I) Atr=03(Int.) MxPS=   1 Ivl=256ms
   
+  //第三层 连接到HUB上的设备
   T:  Bus=01 Lev=02 Prnt=02 Port=00 Cnt=01 Dev#=  3 Spd=12   MxCh= 0
   D:  Ver= 1.10 Cls=00(>ifc ) Sub=00 Prot=00 MxPS= 8 #Cfgs=  1
   P:  Vendor=248a ProdID=8366 Rev= 1.00
@@ -91,6 +92,7 @@
   I:* If#= 4 Alt= 0 #EPs= 1 Cls=03(HID  ) Sub=00 Prot=00 Driver=(none)
   E:  Ad=83(I) Atr=03(Int.) MxPS=  64 Ivl=64ms
   
+  //Jabra 
   T:  Bus=01 Lev=02 Prnt=02 Port=02 Cnt=03 Dev#=  7 Spd=12   MxCh= 0
   D:  Ver= 2.00 Cls=00(>ifc ) Sub=00 Prot=00 MxPS=64 #Cfgs=  1
   P:  Vendor=0b0e ProdID=0412 Rev= 1.09
