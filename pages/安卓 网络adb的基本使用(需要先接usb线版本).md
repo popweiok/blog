@@ -8,3 +8,12 @@
 		- `adb connect <Android设备IP地址>`
 	- 5、进入到Android设备shell
 		- `adb shell`
+- **网络转Mico USB数据线**
+	- //断开网络adb调试
+	- # adb disconnect
+	  
+	  //开启Mico USB调试
+	- # adb usb
+	  
+	  //进入到Androdi终端设备的shell
+	- # adb shell
