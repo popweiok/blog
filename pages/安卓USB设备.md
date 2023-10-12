@@ -65,6 +65,7 @@
   I:* If#= 0 Alt= 0 #EPs= 1 Cls=09(hub  ) Sub=00 Prot=00 Driver=hub
   E:  Ad=81(I) Atr=03(Int.) MxPS=   1 Ivl=256ms
   
+  //usb鼠标
   T:  Bus=01 Lev=03 Prnt=04 Port=00 Cnt=01 Dev#=  5 Spd=12   MxCh= 0
   D:  Ver= 1.10 Cls=00(>ifc ) Sub=00 Prot=00 MxPS=64 #Cfgs=  1
   P:  Vendor=067b ProdID=2303 Rev= 3.00
@@ -76,6 +77,7 @@
   E:  Ad=02(O) Atr=02(Bulk) MxPS=  64 Ivl=0ms
   E:  Ad=83(I) Atr=02(Bulk) MxPS=  64 Ivl=0ms
   
+  //全时USB摄像头
   T:  Bus=01 Lev=03 Prnt=04 Port=02 Cnt=02 Dev#=  6 Spd=480  MxCh= 0
   D:  Ver= 2.00 Cls=ef(misc ) Sub=02 Prot=01 MxPS=64 #Cfgs=  1
   P:  Vendor=eba4 ProdID=7585 Rev= 1.50
@@ -92,7 +94,7 @@
   I:* If#= 4 Alt= 0 #EPs= 1 Cls=03(HID  ) Sub=00 Prot=00 Driver=(none)
   E:  Ad=83(I) Atr=03(Int.) MxPS=  64 Ivl=64ms
   
-  //Jabra 
+  //Jabra SPEAK 410 USB麦克风 
   T:  Bus=01 Lev=02 Prnt=02 Port=02 Cnt=03 Dev#=  7 Spd=12   MxCh= 0
   D:  Ver= 2.00 Cls=00(>ifc ) Sub=00 Prot=00 MxPS=64 #Cfgs=  1
   P:  Vendor=0b0e ProdID=0412 Rev= 1.09
