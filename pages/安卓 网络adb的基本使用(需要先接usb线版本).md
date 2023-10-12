@@ -5,5 +5,6 @@
 	- 3、开启tcp/ip调试端口 ，5555为网络 adb 的默认端口。
 		- `adb tcpip 5555`
 	- 4、使用网络进行adb调试。
+		- `adb connect <Android设备IP地址>`
+	- 5、进入到Android设备shell
 		-
-	-
