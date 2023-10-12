@@ -7,4 +7,4 @@
 	- 4、使用网络进行adb调试。
 		- `adb connect <Android设备IP地址>`
 	- 5、进入到Android设备shell
-		-
+		- `adb shell`
