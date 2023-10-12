@@ -115,4 +115,5 @@
 - cat /proc/bus/input/devices ：查看连接的输入设备信息
 - cat sys/bus/usb/devices/2-1.1/ ：查看对应USB设备的详细信息，例如 2-1.1:1.0 命名规则是：roothub-port:configuration.interface.）
 - cat /sys/bus/usb/devices/2-1.1\:1.0/bInterfaceClass ：查看当前设备所支持的特性，例如： 01 表示支持audio
-- ls /sys/bus/usb/drivers/usb/
+- ls /sys/bus/usb/drivers/usb/ ：只查看连接设备的端口信息
+- cat /sys/bus/usb/devices/1-1.4/uevent   ：查看主次设备号
