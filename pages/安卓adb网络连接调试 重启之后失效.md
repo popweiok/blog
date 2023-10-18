@@ -16,9 +16,27 @@
 - 第二种方法：
 	- 也是在/system/build.prop 文件中加入service.adb.tcp.port=5555，只是执行方式不一样；
 	- 具体步骤
-	- 1，adb pull /system/build.prop C:\Users\Administrator\Desktop 把build.prop文件导出到桌面
+	- 1，`adb pull /system/build.prop C:\Users\Administrator\Desktop` 把build.prop文件导出到桌面
 	- 2，以文本的方式打开build.prop文件
 	- 3，在文件中加入service.adb.tcp.port=5555，保存
-	- 4，adb push C:\Users\Administrator\Desktop\build.prop /system/
-	- 注意：如果build.prop文件为只读，测也需要通过mount -o remount rw /system（重新挂载system目录为可读可写）
+	- 4，`adb push C:\Users\Administrator\Desktop\build.prop /system/`
+	- 注意：如果build.prop文件为只读，测也需要通过`mount -o remount rw /system`（重新挂载system目录为可读可写）
 	- 重启生效
+- 第三种方式：
+- 1，adb shell 进入Android系统命令
+- 2，获取root权限
+- 3，执行adb shell su -c setprop service.adb.tcp.port 5555
+- 4，如果执行3 没效果，执行 adb shell su 0 "setprop service.adb.tcp.port 5555" 试一下
+- 关于挂载的问题：
+- 有些板子只需要执行
+- adb root
+- adb remount  /system
+- 即可完成挂载；
+- 总结：三种方式都是修改/system/build.prop文件，增加或者修改setprop service.adb.tcp.port属性值；关于build.prop的adb命令
+  adb shell 
+  getprop  //列出所有配置属性值
+  getprop [key]  //取得对应的key的属性值
+  如果要修改属性的话，只需修改键值对的值（字典值）就可以了，如：setprop [key] [value] 设置指定key的属性值。
+  ————————————————
+  版权声明：本文为CSDN博主「Ang_qq_252390816」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+  原文链接：https://blog.csdn.net/ezconn/article/details/103358710
