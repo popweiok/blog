@@ -19,3 +19,5 @@
 	  //进入到Androdi终端设备的shell
 	  # adb shell
 	  ```
+- [[安卓adb网络连接调试 重启之后失效]]
+-
