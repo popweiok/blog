@@ -13,6 +13,12 @@
 	- 6，最后再执行` echo service.adb.tcp.port=5555 >> /system/build.prop`
 	- *注意：4，5，6不是非必须，build.prop为只读文件时才要执行挂在命令；*
 	- 重启生效
-	  ————————————————
-	  版权声明：本文为CSDN博主「Ang_qq_252390816」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
-	  原文链接：https://blog.csdn.net/ezconn/article/details/103358710
+- 第二种方法：
+	- 也是在/system/build.prop 文件中加入service.adb.tcp.port=5555，只是执行方式不一样；
+	- 具体步骤
+	- 1，adb pull /system/build.prop C:\Users\Administrator\Desktop 把build.prop文件导出到桌面
+	- 2，以文本的方式打开build.prop文件
+	- 3，在文件中加入service.adb.tcp.port=5555，保存
+	- 4，adb push C:\Users\Administrator\Desktop\build.prop /system/
+	- 注意：如果build.prop文件为只读，测也需要通过mount -o remount rw /system（重新挂载system目录为可读可写）
+	- 重启生效
