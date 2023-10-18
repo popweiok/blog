@@ -29,11 +29,14 @@
 	- 4，如果执行3 没效果，执行` adb shell su 0 "setprop service.adb.tcp.port 5555"` 试一下
 	- 关于挂载的问题：
 	- 有些板子只需要执行
-	- adb root
-	- adb remount  /system
+	- ```
+	  adb root
+	  adb remount  /system
+	  ```
 	- 即可完成挂载；
-	- 总结：三种方式都是修改/system/build.prop文件，增加或者修改setprop service.adb.tcp.port属性值；关于build.prop的adb命令
-	  adb shell 
-	  getprop  //列出所有配置属性值
-	  getprop [key]  //取得对应的key的属性值
-	  如果要修改属性的话，只需修改键值对的值（字典值）就可以了，如：setprop [key] [value] 设置指定key的属性值。
+- 总结：
+- 三种方式都是修改/system/build.prop文件，增加或者修改setprop service.adb.tcp.port属性值；关于build.prop的adb命令
+  adb shell 
+  getprop  //列出所有配置属性值
+  getprop [key]  //取得对应的key的属性值
+  如果要修改属性的话，只需修改键值对的值（字典值）就可以了，如：setprop [key] [value] 设置指定key的属性值。
