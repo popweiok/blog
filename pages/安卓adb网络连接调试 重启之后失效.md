@@ -36,6 +36,10 @@
 	- 即可完成挂载；
 - 总结：
 - 三种方式都是修改/system/build.prop文件，增加或者修改setprop service.adb.tcp.port属性值；关于build.prop的adb命令：
-	- `````` 
+	- ```
+	  adb shell 
+	  getprop  //列出所有配置属性值
+	  getprop [key]  //取得对应的key的属性值
+	  ```
 	  如果要修改属性的话，只需修改键值对的值（字典值）就可以了，如：setprop [key] [value] 设置指定key的属性值。
 		-
