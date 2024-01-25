@@ -1,4 +1,4 @@
-- ![image.png](../assets/image_1690874933007_0.png){:height 404, :width 780}
+- ![image.png](../assets/image_1690874933007_0.png){:height 252, :width 480}
 - ## 通信规则  设置方向
 	- ***出站***
 		- 源：设备
