@@ -31,7 +31,6 @@
 		- ![image.png](../assets/image_1690857214619_0.png)
 			- 需要用到三个插件 ***fdisk*** ***resize2fs*** ***losetup***
 				- 查看硬盘分区情况
-				  collapsed:: true
 					- ![image.png](../assets/image_1690857381078_0.png)
 				- 注意第二分区开始数值
 				  collapsed:: true
@@ -50,7 +49,6 @@
 	- ![image.png](../assets/image_1690855861283_0.png)
 	- 需要用到两个插件  ***fdisk***  ***resize2fs***
 		- 查看分区情况，注意循环设备盘符
-		  collapsed:: true
 			- ![image.png](../assets/image_1690857710417_0.png)
 		- 删除原第二分区，并新建分区（注意第二分区的开始值）
 		  collapsed:: true
