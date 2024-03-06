@@ -12,9 +12,9 @@
 	- vmlinuz
 		- 内核
 - ### ext4 与 squashfs 格式的区别
+  collapsed:: true
 	- ext4 格式的 rootfs 可以扩展磁盘空间大小，而 squashfs 不能。
 	- squashfs 格式的 rootfs 可以使用重置功能（恢复出厂设置），而 ext4 不能。
-		-
 - ### EXT4固件
   collapsed:: true
 	- ![image.png](../assets/image_1690855820626_0.png)
