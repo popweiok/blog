@@ -1,4 +1,5 @@
-- OpenWRT
+### OpenWRT各种固件版本
+	- combined-ext4.img.gz
 - ### EXT4固件
   collapsed:: true
 	- ![image.png](../assets/image_1690855820626_0.png)
