@@ -136,5 +136,5 @@
  :editor/preferred-pasting-file? true
  :ui/show-full-blocks? true
  :editor/logical-outdenting? true
- :publishing/all-pages-public? true}
+ :publishing/all-pages-public? false}
  

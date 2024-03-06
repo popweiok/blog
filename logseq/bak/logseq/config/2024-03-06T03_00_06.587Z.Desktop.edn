@@ -135,6 +135,5 @@
  :file/name-format :triple-lowbar
  :editor/preferred-pasting-file? true
  :ui/show-full-blocks? true
- :editor/logical-outdenting? true
- :publishing/all-pages-public? true}
+ :editor/logical-outdenting? true}
  
