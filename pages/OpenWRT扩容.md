@@ -11,6 +11,8 @@
 		- rootfs(squashfs 格式) 分区镜像，可以 dd 写入某个分区或者 mount -o 挂载到目录
 	- vmlinuz
 		- 内核
+- ### ext4 与 squashfs 格式的区别
+	- ext4 格式的 rootfs 可以扩展磁盘空间大小，而 squashfs 不能。
 	-
 -
 - ### EXT4固件
