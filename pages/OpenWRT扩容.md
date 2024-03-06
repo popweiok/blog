@@ -1,4 +1,6 @@
-### EXT4固件
+- OpenWRT
+- ### EXT4固件
+  collapsed:: true
 	- ![image.png](../assets/image_1690855820626_0.png)
 	- #### 挂载分区方式
 		- ***未格式化分区-->新建主分区-->复制根目录内容到新分区-->把原系统根目录默认挂载点变成新分区***
@@ -46,6 +48,7 @@
 					- ![image.png](../assets/image_1690857524326_0.png)
 					-
 - ### SQUASHFS固件
+  collapsed:: true
 	- ![image.png](../assets/image_1690855861283_0.png)
 	- 需要用到两个插件  ***fdisk***  ***resize2fs***
 		- 查看分区情况，注意循环设备盘符
@@ -57,6 +60,7 @@
 		- 用resize2fs扩容循环设备
 			- ![image.png](../assets/image_1690857837104_0.png)
 - ### UEFI格式的硬盘
+  collapsed:: true
 	- BLKID插件
 		- 查看第二分区的UUID号
 		  collapsed:: true
