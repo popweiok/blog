@@ -1,11 +1,10 @@
-- ### EXT4固件
+### EXT4固件
 	- ![image.png](../assets/image_1690855820626_0.png)
 	- #### 挂载分区方式
 		- ***未格式化分区-->新建主分区-->复制根目录内容到新分区-->把原系统根目录默认挂载点变成新分区***
 		- ![image.png](../assets/image_1690856012649_0.png)
 			- 需要用到两个插件 ***fdisk**** 磁盘分区插件   ***block-mount*** 挂载点插件
 				- 查看现有分区，fdisk -l
-				  collapsed:: true
 					- ![image.png](../assets/image_1690856636204_0.png)
 				- 注意最后一个分区的结束，新建分区必须大于最后一个分区数值
 				  collapsed:: true
