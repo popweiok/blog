@@ -1,13 +1,16 @@
 ### OpenWRT各种固件版本
 	- combined-ext4.img.gz
-		- 包含引导信息、rootfs(ext4 格式)、内核以及相关分区信息的硬盘镜像，可以 dd 写入某个磁盘
+		- 包含引导信息、rootfs(ext4 格式)、内核以及相关分区信息的硬盘镜像，[[$green]]==可以 dd== 写入某个磁盘
 	- combined-squashfs.img.gz
 		- 包含引导信息、rootfs(squashfs 格式)、内核以及相关分区信息的硬盘镜像
 	- generic-rootfs.tar.gz
-	-
+		- rootfs 包含的所有文件
 	- rootfs-ext4.img.gz
+		- rootfs(ext4 格式) 分区镜像，可以 dd 到某个分区或者 mount -o 到某个目录
 	- rootfs-squashfs.img.gz
+		- rootfs(squashfs 格式) 分区镜像，可以 dd 写入某个分区或者 mount -o 挂载到目录
 	- vmlinuz
+		- 内核
 - ### EXT4固件
   collapsed:: true
 	- ![image.png](../assets/image_1690855820626_0.png)
