@@ -1,5 +1,11 @@
 ### OpenWRT各种固件版本
 	- combined-ext4.img.gz
+		-
+	- combined-squashfs.img.gz
+	- generic-rootfs.tar.gz
+	- rootfs-ext4.img.gz
+	- rootfs-squashfs.img.gz
+	- vmlinuz
 - ### EXT4固件
   collapsed:: true
 	- ![image.png](../assets/image_1690855820626_0.png)
