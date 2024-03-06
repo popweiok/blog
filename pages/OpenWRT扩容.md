@@ -11,6 +11,8 @@
 		- rootfs(squashfs 格式) 分区镜像，可以 dd 写入某个分区或者 mount -o 挂载到目录
 	- vmlinuz
 		- 内核
+	-
+-
 - ### EXT4固件
   collapsed:: true
 	- ![image.png](../assets/image_1690855820626_0.png)
