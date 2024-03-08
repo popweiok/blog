@@ -8,6 +8,7 @@
 		  systemctl status sshd.service
 		  ```
 	- #### 允许root访问
+	  collapsed:: true
 		- ```clojure
 		  # SSH 放行
 		  sudo sed -i 's/^#\?PermitRootLogin.*/PermitRootLogin yes/g' /etc/ssh/sshd_config;
