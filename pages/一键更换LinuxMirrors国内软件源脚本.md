@@ -2,8 +2,10 @@
 	- 中国大陆
 		- ```
 		  bash <(curl -sSL https://linuxmirrors.cn/main.sh)
+		  # bash <(curl -sSL https://gitee.com/SuperManito/LinuxMirrors/raw/main/ChangeMirrors.sh)
 		  ```
 	- 大陆教育网
+		- bash <(curl -sSL https://linuxmirrors.cn/main.sh) --edu
 		-
 	- 海外
 	-
