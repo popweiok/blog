@@ -3,7 +3,10 @@
 		- ```
 		  bash <(curl -sSL https://cdn.jsdelivr.net/gh/SuperManito/LinuxMirrors@main/ChangeMirrors.sh)
 		  ```
-	- 大陆
+	- 大陆教育网
+		-
+	- 海外
+	-
 	- 注意
 		- *Debian 系 Linux 默认禁用了源码仓库和预发布软件源，若需启用请将 list 源文件中相关内容的所在行 取消注释。*
 		- *RedHat 系 Linux 配置了所有可以配置的仓库，但有一些仓库默认没有启用，若需启用请将 repo 源文件中的 enabled=0修改成 enabled=1*。
