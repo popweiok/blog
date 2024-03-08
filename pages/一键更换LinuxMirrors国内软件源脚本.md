@@ -8,8 +8,6 @@
 - ### `Docker` 一键安装脚本
 	- `bash <(curl -sSL https://cdn.jsdelivr.net/gh/SuperManito/LinuxMirrors@main/DockerInstallation.sh)`
 	- 注意
-		- Docker CE：Docker Community Edition 镜像仓库，用于下载并安装 Docker 相关软件包。
-		- # 来源(Source)：南山如雪
-		  
-		  Docker Hub：Docker Hub 镜像仓库，默认为官方提供的公共库，用于切换下载镜像时的来源仓库，简称镜像加速器。
+		- Docker CE：*Docker Community Edition 镜像仓库，用于下载并安装 Docker 相关软件包*。
+		- Docker Hub：*Docker Hub 镜像仓库，默认为官方提供的公共库，用于切换下载镜像时的来源仓库，简称镜像加速器。*
 -
