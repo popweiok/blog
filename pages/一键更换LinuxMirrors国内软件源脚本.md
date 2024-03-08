@@ -1,7 +1,7 @@
 ### `GNU/Linux` 一键更换国内软件源脚本
 	- 中国大陆
 		- ```
-		  bash <(curl -sSL https://cdn.jsdelivr.net/gh/SuperManito/LinuxMirrors@main/ChangeMirrors.sh)
+		  bash <(curl -sSL https://linuxmirrors.cn/main.sh)
 		  ```
 	- 大陆教育网
 		-
