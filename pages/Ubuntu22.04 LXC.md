@@ -43,9 +43,10 @@
 	  sudo systemctl restart sshd
 	  ```
 - ### 修改时区
-	- ```clojure
+	- ```
 	  sudo ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 	  ```
+	-
 - ### 网络配置
 	- #### 打开网卡配置文件进行设置
 		- ```clojure
