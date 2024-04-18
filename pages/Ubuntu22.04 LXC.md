@@ -1,9 +1,9 @@
 ### 开启ssh
 	- #### 安装
-		- ```clojure
+		- ```
 		  sudo systemctl enable sshd && sudo systemctl start sshd
 		  ```
-		- ```clojure
+		- ```
 		  #检查服务状态 
 		  systemctl status sshd.service
 		  ```
@@ -18,7 +18,7 @@
 		  sudo service sshd restart
 		  ```
 - ### 桌面启用root用户
-	- ```clojure
+	- ```
 	  #!/bin/bash 
 	  #set root password
 	  sudo passwd root
@@ -55,10 +55,13 @@
 	- ```
 	  apt install zsh git vim curl -y
 	  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+	  
+	  #添加未知命令提示工具
+	  
 	  ```
 - ### 网络配置
 	- #### 打开网卡配置文件进行设置
-		- ```clojure
+		- ```
 		  sudo vim /etc/netplan/00-installer-config.yaml
 		  # This is the network config written by 'subiquity'
 		  network:
@@ -77,7 +80,7 @@
 		  ```
 	-
 	- #### 手动配置多IP
-		- ```clojure
+		- ```
 		  network:
 		    version: 2
 		    renderer: networkd
