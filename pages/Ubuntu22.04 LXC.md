@@ -45,6 +45,9 @@
 - ### 修改时区
 	- ```
 	  sudo ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+	  
+	  #或者用timedatectl设置
+	  
 	  ```
 	-
 - ### 网络配置
