@@ -108,7 +108,7 @@
 		  ```
 		-
 	- #### 使配置生效
-		- ```clojure
+		- ```
 		  sudo netplan apply
 		  ```
 		-
@@ -116,7 +116,7 @@
 	- **Universe 和 multiverse 存储库**
 		- Universe 库提供社区维护的免费开源软件，Ubuntu 不保证其定期的安全更新
 		- Multiverse 提供的软件不是免费和开源的，因此，Ubuntu 不提供更新和 bug 修复
-	- ```clojure
+	- ```
 	  #中科大
 	  sudo bash -c "cat << EOF > /etc/apt/sources.list && apt update 
 	  deb https://mirrors.ustc.edu.cn/ubuntu/ jammy main restricted universe multiverse
@@ -133,20 +133,20 @@
 	  ```
 - ### 软件包的依赖关系
 	- **APT**
-		- ```clojure
+		- ```
 		  apt show <Package_name>
 		  
 		  apt-cache depends <Package_name>
 		  ```
 	- **DPKG**
-		- ```clojure
+		- ```
 		  dpkg --info < path_of_deb_file >
 		  
 		  #例如：我们有一个超级终端的 deb 文件。要获取此 deb 文件的依赖项详细信息
 		  dpkg --info hyper_3.2.3_amd64.deb
 		  ```
 - ### 查找软件安装路径
-	- ```clojure
+	- ```
 	  ps -aux 
 	  find 或 whereis
 	  dpkg-query -L APPLICATION-NAME #查看已安装软件包
@@ -159,7 +159,7 @@
 - ### 常用命令
 	- #### 解压文件 `tar -zxvf 文件名`
 	- #### 复制源目录 为 dir1 ,目标目录为dir2
-		- ```clojure
+		- ```
 		  # 如果dir2目录不存在
 		  [root@zcwyou ~]# cp -r dir1 dir2
 		  
@@ -169,7 +169,7 @@
 	- **测试ipv6/4优先**  `curl test.ipw.cn`
 	  id:: 64c77e10-49a8-4379-af03-c488927c0b6f
 	- **网络侦听**
-		- ```clojure
+		- ```
 		  #显示主机名
 		  ss -tunlp 
 		  #显示数字端口
@@ -178,7 +178,7 @@
 		  ss -ano |grep 端口或进程名
 		  ```
 	- **APT命令**
-		- ```clojure
+		- ```
 		  #刷新本地软件包索引 
 		  apt update
 		  #浏览待升级的包列表
@@ -189,7 +189,7 @@
 	- **进程**    `ps -aux|grep 进程名`
 	-
 - ### 防火墙
-	- ```clojure
+	- ```
 	  #查看防火墙状态
 	  sudo ufw status
 	  #安装防火墙
@@ -240,7 +240,7 @@
 	- `lsb_release -a `
 -
 - ### ubuntu 安裝Qemu guest agent
-	- ```clojure
+	- ```
 	  apt update && apt install qemu-guest-agent -y
 	  systemctl enable qemu-guest-agent
 	  systemctl start qemu-guest-agent
