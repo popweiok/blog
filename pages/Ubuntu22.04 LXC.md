@@ -52,7 +52,10 @@
 	  ```
 	-
 - ### 常用软件安装
-	- ``````
+	- ```
+	  apt install zsh git vim curl -y
+	  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+	  ```
 - ### 网络配置
 	- #### 打开网卡配置文件进行设置
 		- ```clojure
