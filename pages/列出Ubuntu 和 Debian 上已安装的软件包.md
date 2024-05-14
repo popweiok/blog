@@ -15,4 +15,5 @@
 	  ```
 		- ![image.png](../assets/image_1715652544448_0.png)
 - DPKG
+	- 其实 apt 与 apt-get 命令都是基于 dpkg
 	-
