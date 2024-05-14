@@ -8,3 +8,4 @@
 		  #可以加 grep 过滤软件名
 		  apt list --installed | grep program_name
 		  ```
+	-
