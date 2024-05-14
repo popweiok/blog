@@ -21,6 +21,7 @@
 	  ```
 		- ![image.png](../assets/image_1715652642020_0.png)
 		- ```
-		  
+		  #同样也可以通过 dpkg 命令的历史日志
 		  grep " install " /var/log/dpkg.log
 		  ```
+		-
