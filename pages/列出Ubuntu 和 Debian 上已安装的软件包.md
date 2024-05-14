@@ -3,6 +3,8 @@
 	- ```
 	  apt list --installed
 	  ```
-		-
--
+		- ![image.png](../assets/image_1715652171847_0.png)
+		- ```
+		  apt list --installed | grep program_name
+		  ```
 -
