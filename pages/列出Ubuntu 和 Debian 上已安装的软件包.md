@@ -21,7 +21,7 @@
 	  ```
 		- ![image.png](../assets/image_1715652642020_0.png)
 		- ```
-		  #同样也可以通过 dpkg 命令的历史日志
+		  #同样也可以通过 dpkg 命令的历史日志，会显示所有的软件安装包，其中包括最近安装的过程中所依赖的软件包。
 		  grep " install " /var/log/dpkg.log
 		  ```
 		-
