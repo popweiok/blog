@@ -24,4 +24,4 @@
 		  #同样也可以通过 dpkg 命令的历史日志，会显示所有的软件安装包，其中包括最近安装的过程中所依赖的软件包。
 		  grep " install " /var/log/dpkg.log
 		  ```
-		-
+			- ![image.png](../assets/image_1715652815223_0.png)
