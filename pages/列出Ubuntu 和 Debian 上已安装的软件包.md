@@ -13,6 +13,6 @@
 	  #查看 apt 历史命令。但不会显示被依赖安装的软件包
 	  grep " install " /var/log/apt/history.log
 	  ```
-		-
+		- ![image.png](../assets/image_1715652544448_0.png)
 - DPKG
 	-
