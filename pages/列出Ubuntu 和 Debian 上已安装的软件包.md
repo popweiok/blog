@@ -5,6 +5,6 @@
 	  ```
 		- ![image.png](../assets/image_1715652171847_0.png)
 		- ```
+		  #可以加 grep 过滤软件名
 		  apt list --installed | grep program_name
 		  ```
--
