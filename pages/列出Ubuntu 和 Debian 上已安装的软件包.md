@@ -10,5 +10,9 @@
 		  apt list --installed | grep program_name
 		  ```
 	- ```
+	  #查看 apt 历史命令。但不会显示被依赖安装的软件包
 	  grep " install " /var/log/apt/history.log
 	  ```
+		-
+- DPKG
+	-
