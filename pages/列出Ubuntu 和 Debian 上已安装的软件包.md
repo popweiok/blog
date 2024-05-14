@@ -1,2 +1,5 @@
 - 所有基于Debian分支理论上都支持，Debian使用apt及dpkg进行软件包管理
 -
+- ##[[apt]]
+-
+-
