@@ -356,7 +356,7 @@
 	- ![image.png](../assets/image_1722416532283_0.png)
 	- ### 自定义脚本触发
 	- 另外还可以使用自定义脚本触发，配合其他程序（如 curl、docker），实现更复杂的功能
-	- ![image](https://img10.360buyimg.com/babel/jfs/t20260220/125060/4/41564/11939/65d4ea14F9ee29827/5804d379737ab650.png)
+	- ![image.png](../assets/image_1722416554371_0.png)
 	- ### 为什么说它是 “伪 DDNS”？
 	- 目前我们做到了访问域名就跳转到 IP + 端口的地址，就是 301/302 跳转，并且我们的方案支持保留链接的参数。你也可以使用一台专门的服务器来实现这个操作，但成本过于高昂而且没有现成 API，这里直接白嫖免费的 Cloudflare
 	- 但由于存在 301/302 跳转后，浏览器的地址栏内就只有 IP 地址，没有域名，不是很方便
@@ -371,24 +371,6 @@
 		- 用于跳转：example.com
 		  logseq.order-list-type:: number
 		  * 在 Cloudflare 那里添加重定向规则的时候，跳转到 域名 + 端口
-		  
-		  ```
-		  1
-		  2
-		  3
-		  4
-		  5
-		  6
-		  7
-		  8
-		  9
-		  10
-		  11
-		  12
-		  13
-		  14
-		  ```
-		  
 		  ```
 		  {
 		    "action": "redirect",
@@ -409,8 +391,7 @@
 		  logseq.order-list-type:: number
 		  * 配置一个 DDNS，将您的 IPv4 公共地址使用接口获取到，然后解析到该域名
 		  
-		  ![image](https://p0.meituan.net/csc/16b3a037f4c58e7421222c76fac0874d192592.png)
-		  
+		  ![image.png](../assets/image_1722416596227_0.png) 
 		  * 获取证书，这边 Lucky 可以申请
 		  
 		  ![image](https://p0.meituan.net/csc/08578f6988a47045b39f1d6ad0ff9e84237992.png)
