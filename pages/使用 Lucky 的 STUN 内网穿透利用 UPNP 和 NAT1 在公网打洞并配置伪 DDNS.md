@@ -89,17 +89,17 @@
 	- 之前我的网络是光猫桥接，爱快软路由拨号
 	- ![image.png](../assets/image_1722415734007_0.png)
 	- 开启路由器的 UPNP 功能：
-	- ![image.png](../assets/image_1722415757293_0.png) ![image](https://kjimg10.360buyimg.com/ott/jfs/t20250403/141539/38/34653/78139/642b0c02Fd84393c9/a2e03551506e6c79.png){:height 376, :width 749}
+	- ![image.png](../assets/image_1722415757293_0.png)
 	- 如果是 OpenWrt，可以尝试打开 NAT1，或安装 UPNP 插件，不过建议直接将 Lucky 装拨号路由器上
 	- ### 光猫路由
 	- 然而前段时间运营商给我免费升级了 FTTR，主光猫是华为 F30，默认光猫拨号（路由），没有启用 UPNP，而且为动态超密。经过折腾，请了两转师傅都没搞到超级密码。如果您也是这种情况，又不想换猫，基本可以关掉这篇文章了。
 	- 不过好在本人还是搞到了光猫的动态超级密码，由于本人目前仍在使用千兆设备，为了榨干带宽，就不折腾路由器拨号了，直接使用光猫拨号，然后打开了 UPNP 和指向我路由器的 DMZ
 	- #### 打开 UPNP
-	- ![image](https://p0.meituan.net/csc/7c9f53baf3e78990c33af408b7df6a52127521.png)
+	- ![image.png](../assets/image_1722415778141_0.png)
 	- #### 设置 DMZ
-	- ![image](https://p0.meituan.net/csc/228e3a0529bec76fa8418b4599048385157631.png)
+	- ![image.png](../assets/image_1722415795517_0.png)
 	- 最终形成以下拓扑：
-	- ![image](https://p0.meituan.net/csc/db9100c75a2f95c16998aac8a3b1efef160600.png)
+	- ![image.png](../assets/image_1722415808733_0.png)
 	- 这样的话，OpenWrt 相当于直接连到运营商的内网，对应 IPv4 NAT 的设置，可以在 OpenWrt 上进行
 	- **Lucky 也建议装到 OpenWrt 上**，这样可以直接使用 OpenWrt 的防火墙进行转发，从而使服务器能够获取到真实的 IP 地址，以及提高效率和性能
 	- ### 测试打洞
