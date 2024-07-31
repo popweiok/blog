@@ -46,7 +46,7 @@
 	  NATMap：https://github.com/heiher/natmap （不支持 Windows）
 	- 后来了解到 Lucky 可以在 Docker 中运行，甚至**能直接跑在 Windows 上**，就在群晖的 Docker 上试着搭建了一下，发现正好满足了我对于内网穿透的要求
 	- ### 打洞原理
-	- ![image](https://kjimg10.360buyimg.com/ott/jfs/t20250403/185100/7/33724/169451/642b0afeFab8c2db5/0d55f1985ff6b59b.png){:height 984, :width 749}
+	- ![image.png](../assets/image_1722415704517_0.png)
 	- *图源自 natter*
 	- 这种 STUN（Session Traversal Utilities for NAT，NAT 会话穿越应用程序）内网穿透技术，可以帮助解决因 NAT 技术所带来的网络连接问题
 	- STUN 技术允许 NAT1 用户获取公网端口，通过路由端口转发或者 LUCKY 内置转发，将内网服务端口暴露到外网，从而实现内网穿透的目的
@@ -87,9 +87,9 @@
 	- ### 光猫桥接
 	- 大多数的路由器默认使用 NAT4 以保障安全，如果改为 NAT1（通常不支持），理论上可以不用开启 UPNP，NAT4 是要必须开启 UPNP 的，**所以，最好开启 UPNP**，如果没有这个功能，只能给那台设备的 IP 设置 DMZ
 	- 之前我的网络是光猫桥接，爱快软路由拨号
-	- ![image](https://p0.meituan.net/csc/10f6800a343cc49a30e9f013495ad328100760.png)
+	- ![image.png](../assets/image_1722415734007_0.png)
 	- 开启路由器的 UPNP 功能：
-	- ![image](https://kjimg10.360buyimg.com/ott/jfs/t20250403/141539/38/34653/78139/642b0c02Fd84393c9/a2e03551506e6c79.png)
+	- ![image.png](../assets/image_1722415757293_0.png) ![image](https://kjimg10.360buyimg.com/ott/jfs/t20250403/141539/38/34653/78139/642b0c02Fd84393c9/a2e03551506e6c79.png){:height 376, :width 749}
 	- 如果是 OpenWrt，可以尝试打开 NAT1，或安装 UPNP 插件，不过建议直接将 Lucky 装拨号路由器上
 	- ### 光猫路由
 	- 然而前段时间运营商给我免费升级了 FTTR，主光猫是华为 F30，默认光猫拨号（路由），没有启用 UPNP，而且为动态超密。经过折腾，请了两转师傅都没搞到超级密码。如果您也是这种情况，又不想换猫，基本可以关掉这篇文章了。
