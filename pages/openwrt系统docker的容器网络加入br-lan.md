@@ -9,7 +9,7 @@
 		- -o "com.docker.network.bridge.name"="br-lan" dn
 		  logseq.order-list-type:: number
 	- *复制代码*
-	- ![image](https://lajilao.top/data/attachment/forum/202403/18/194402jcnonckcnvvxvjkj.png){:width 600 :height 436}
+	- ![image.png](../assets/image_1722414026806_0.png){:height 552, :width 749} {:width 600 :height 436}
 	- 网络这样创建就可以啦
 	- 创建容器的时候，选dn这个网络就可以了，手动配置好192.168.9.x网段的ip就可以了
 -
