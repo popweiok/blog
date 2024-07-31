@@ -99,14 +99,14 @@
 	- #### 设置 DMZ
 	- ![image.png](../assets/image_1722415795517_0.png)
 	- 最终形成以下拓扑：
-	- ![image.png](../assets/image_1722415808733_0.png)
+	- ![image.png](../assets/image_1722415842792_0.png)
 	- 这样的话，OpenWrt 相当于直接连到运营商的内网，对应 IPv4 NAT 的设置，可以在 OpenWrt 上进行
 	- **Lucky 也建议装到 OpenWrt 上**，这样可以直接使用 OpenWrt 的防火墙进行转发，从而使服务器能够获取到真实的 IP 地址，以及提高效率和性能
 	- ### 测试打洞
 	- 您需要确保您的 NAT 类型能够成功打洞，这里我们使用 HMBSbige/NatTypeTester 进行测试
 	- 下载地址：https://github.com/HMBSbige/NatTypeTester/releases/latest
 	- 推荐下载最小体积的那个，然后安装 .NET Desktop Runtime
-	- ![image](https://p1.meituan.net/csc/1f8f5dcc16aaeaf39129bce195015ad877772.png)
+	- ![image.png](../assets/image_1722415862582_0.png)
 	- ![image](https://p0.meituan.net/csc/aa8d1d71687d0ecac8a2ef88823cce5840816.png)
 	- ## 安装 Lucky
 	- 官方文档：https://lucky666.cn/docs/install
