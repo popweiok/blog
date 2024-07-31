@@ -213,7 +213,7 @@
 	- ### 点击部署
 	- 然后在 Github 界面点击这个 ![image](https://deploy.workers.cloudflare.com/button){:width 184 :height 39} 图标进行部署，会自动跳转到 cloudflare，按步骤操作即可，最终会在 Github 仓库中创建一个 Github Action 来将该仓库部署到 Cloudflare Workers。
 	- 就像这样：
-	- ![image](https://img.lixueduan.com/docker/mirror/deploy-to-cloudflare.png){:width 836 :height 717}
+	- ![image.png](../assets/image_1722411819730_0.png)
 	- ### 等待部署完成
 	- 可以到 Github 查看 Action 执行进度
 	- ![image](https://img.lixueduan.com/docker/mirror/deploy-progress.png){:width 836 :height 437}
