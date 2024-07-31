@@ -156,11 +156,11 @@
 	- ![image.png](../assets/image_1722415992780_0.png)
 	- OpenWRT-2
 	- 在 Lucky 侧我们配置穿透通道监听端口为刚才在路由器上配置的暴露到外网（运营商 NAT1 内网）的那个端口，关闭 Lucky 自带转发
-	- ![image](https://p0.meituan.net/csc/54a57bd3aeba15d9383613ee67f97323113699.png)
+	- ![image.png](../assets/image_1722416007813_0.png)
 	- 此时我们反复开关该规则，可以发现端口号基本不会改变
 	- 经过 ITDOG 测试，外部可以正常访问
 	- https://www.itdog.cn/tcping
-	- ![image](https://p0.meituan.net/csc/48be81c656844c0d4db39b013f247585149741.png)
+	- ![image.png](../assets/image_1722416030741_0.png)
 	- ### Lucky 装拨号路由器上
 	- \*\*推荐，\*\*这种情况下只需勾选 防火墙自动放行，填写内网服务器地址和端口即可，Lucky 会自动添加防火墙规则配置转发
 	- > 只写着支持 iptables，不清楚是否支持 nfttables，如果无法自动添加规则的话，基于 nfttables 的新版 OpenWrt 最好安装兼容模块 `kmod-nf-ipt`
@@ -187,7 +187,7 @@
 	  > 如果您没有 IPv6，您也可以使用免费的 Cloudflared 实现
 	  >
 	  > 如果您非要使用 IPv4 打洞，也不是不行，需要分别设置 A 记录 DDNS 和源站规则（Origin Rules）回源端口动态更新
-	- ![image](https://p0.meituan.net/csc/940f455a2af6f80aa6a8b5ef9c7c13f3461168.png)
+	-
 	- 如果需要使用优选，可以按照 SaaS 接入的教程来，这种网上一搜一大堆，反正就是在 SSL/TLS 自定义主机名那里添加**另一个域名**，然后配好 ACME，**回源可以任意**
 	- ![image](https://p0.meituan.net/csc/37f0b74f176b30da44de8e10fb479537387189.png)
 	- 接下来有多种实现方式，页面规则的话免费版每个域名只能设置 3 条，而且不够动态，目前增加了重定向规则，免费版每个域名可以设置 10 条，两种方式加起来可以总共创建 3+10=13 条规则
