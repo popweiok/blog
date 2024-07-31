@@ -412,13 +412,13 @@
 	- 感谢网友 @Rowan 无意发现这个方法，受邀在该文章上写出来，分享给大家
 	- 在群辉默认分享的时候，可以设置一下固定地址，可以免去修改地址的繁琐
 	- 控制面板 > 外部访问，填写固定域名，端口默认 80，在文件分享时会默认从这个域名的 80 端口分享，也就是分享的时候不再是 ip + 端口，避免 ip 和端口跳动
-	- ![image](https://img10.360buyimg.com/babel/jfs/t20260412/133109/29/44097/40013/6618d2e3F40d37e26/f0f2defaa8ba7b81.png){:height 447, :width 749}
+	- ![image.png](../assets/image_1722416782051_0.png)
 	- 这样直接访问分享出来的链接就可以跳转到 NAS 的 IP 地址 + 端口了，而且无需手动修改
-	- ![image](https://img10.360buyimg.com/babel/jfs/t20260412/182630/22/43955/24890/6618d32fFc9705a37/494751ff5c9df046.png)
+	- ![image.png](../assets/image_1722416797762_0.png)
 	- 这样可以避免使用内网穿透，无需 QC，直接连接公网 IP + 端口下载文件，且容易分享
 	- > 不建议将 DSM 直接暴露在公网上，在对外公开 DSM 前，最好给 DSM 套上 WAF（Web 应用防火墙），避免脚本小子和 0day 漏洞带来数据安全问题
 	- ### Lucky + 本地 Alist + 云端 Alist 实现隐藏端口号固定地址访问
-	- ![image](https://img10.360buyimg.com/babel/jfs/t20260412/173996/34/45278/75650/6618de4eFc2e06348/ce5e7083a91f556a.png)
+	- ![image.png](../assets/image_1722416811653_0.png)
 	- 使用 `IP+端口`或`域名+端口`访问肯定不是一件长久的事，尤其是 Alist 文件分享。为了解决这个问题，我们可以使用 Lucky 的 STUN 穿透功能，调用 Alist 的相关 API 来实现：
 		- 搭建一台本地服务器、一台云服务器
 		  logseq.order-list-type:: number
@@ -470,7 +470,7 @@
 	- 如果懒得折腾，可以使用成品的 PCDN 储存服务，<del>如大家都知道的 123 网盘，就是使用这个原理，降低了运营成本，才带来了继蓝奏云之后大文件免登录分享的体验</del>（割韭菜）
 	- ### Lucky+Cloudreve 实现自建 PCDN 网盘
 	- 给个思路，服务端利用云服务器内网穿透出来，下载文件 / 中转通过 PCDN 线路，可利用 Cloudreve 自带的 CDN 功能实现
-	- ![image](https://p0.meituan.net/csc/e74f959eee72a4ce7362e692c0d60c3c1439933.png)
+	- ![image.png](../assets/image_1722416833007_0.png) ![image](https://p0.meituan.net/csc/e74f959eee72a4ce7362e692c0d60c3c1439933.png){:height 404, :width 749}
 	- ### Lucky+RustDesk 实现自建远程桌面服务器
 	- 网上有教程，本人也尝试复现成功，一定程度上可以减轻云服务器的负担，但不方便更新地址，个人推荐搭配 Lucky 自定义脚本触发食用
 	- 打通大内网番外篇 无需公网，搭建 RustDesk 远程桌面 （基于 Lucky 的 STUN 穿透） 作者：qaz741wsd856
