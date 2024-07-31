@@ -216,10 +216,10 @@
 	  ```
 	- 状态代码：301
 	- 点击部署
-	- ![image](https://p1.meituan.net/csc/7876ca932dd3b721c035c15b4dc3845e547987.png){:height 689, :width 749}
+	- ![image.png](../assets/image_1722416147669_0.png)
 	- 为了获取相关参数信息，我们需要重新编辑以下，模拟接口请求
 	- 点击设置或编辑，重新部署，F12 抓包，从**请求地址**中获取**区域 ID**、 **规则集 ID** 和 **规则 ID**
-	- ![image](https://p0.meituan.net/csc/8c94a199f6d725df5109f3a2a23d8864165052.png)
+	- ![image.png](../assets/image_1722416166588_0.png)
 	- ```
 	  1
 	  ```
