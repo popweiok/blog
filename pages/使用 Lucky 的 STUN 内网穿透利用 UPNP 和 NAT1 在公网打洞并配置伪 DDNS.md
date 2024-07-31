@@ -395,11 +395,11 @@
 		  * 获取证书，这边 Lucky 可以申请
 		  
 		  ![image.png](../assets/image_1722416651307_0.png) 
-		  ![image](https://p0.meituan.net/csc/be8b4b95ce95c9282e69b98017f1af3161120.png)
+		  ![image.png](../assets/image_1722416675132_0.png)
 		  
 		  * 将此证书下载并部署到您的服务端上，如果您的服务端不支持证书，您可以使用 Nginx 等专业工具或 Lucky 的反向代理功能将其套用证书
 		  
-		  ![image](https://p1.meituan.net/csc/d1ca9e7ef6f118f2304454ff7ee87e7f316526.png)
+		  ![image.png](../assets/image_1722416711117_0.png)
 	- 此时通过 http /https 访问 example.com 会跳转到 https 的 stun.example.com: 端口，并且浏览器不会提示证书错误
 	- ### 如何实现双栈访问？
 	- 您也可以设置 IPv6 DDNS，然后让使用 IPv6 访问的 example.com 跳转到 IPv6 的地址 ipv6.example.com，IPv4 访问的 example.com 跳转到 IPv4 的地址 ipv4.example.com，减少 UDP 流量
