@@ -149,11 +149,11 @@
 	  > 4. 将该端口利用 Lucky 打洞，让运营商 NAT 网关转发这个端口到最终的公网端口，从而实现**逐层内网穿透的效果**
 	  > 5. 可能需要添加**放行该端口在 WAN 区域访问**的防火墙规则
 	  > 6. 如果您把 Lucky 直接部署到路由器上（非 Docker），可以忽略这个过程
-	- ![image](https://p0.meituan.net/csc/f5b762d5095c514392a550e50fbd3ed7775262.png)
+	- ![image.png](../assets/image_1722415957126_0.png)
 	- 爱快
-	- ![image](https://p0.meituan.net/csc/539eb4ed1691e9effb9cc5b6a872fb21303084.png)
+	- ![image.png](../assets/image_1722415974766_0.png)
 	- OpenWRT-1
-	- ![image](https://p0.meituan.net/csc/e24b397f45edbba04a49c08ca790606f115158.png)
+	- ![image.png](../assets/image_1722415992780_0.png)
 	- OpenWRT-2
 	- 在 Lucky 侧我们配置穿透通道监听端口为刚才在路由器上配置的暴露到外网（运营商 NAT1 内网）的那个端口，关闭 Lucky 自带转发
 	- ![image](https://p0.meituan.net/csc/54a57bd3aeba15d9383613ee67f97323113699.png)
