@@ -7,7 +7,7 @@
 		- ### 内容
 			- ![](https://proxy-prod.omnivore-image-cache.app/0x0,sb9FtdCb_T4b1O697eqoXY9k3NVVgRsw8SlTyVuCA3pc/https://csdnimg.cn/release/blogv2/dist/pc/img/original.png)
 			  
-			  版权声明：本文为博主原创文章，遵循[ CC 4.0 BY-SA ](http://creativecommons.org/licenses/by-sa/4.0/)版权协议，转载请附上原文出处链接和本声明。
+			   版权声明：本文为博主原创文章，遵循[ CC 4.0 BY-SA ](http://creativecommons.org/licenses/by-sa/4.0/)版权协议，转载请附上原文出处链接和本声明。
 			  
 			  **目录**
 			  
@@ -63,7 +63,7 @@
 			  
 			  安装好后，找到安装的文件夹，找到uvnc\_settings.exe鼠标右键，点击以管理员身份运行，就会弹出如下页面，第一张为默认端口号，第二张设置远程访问VNC密码，设置远程只查看密码。
 			  
-			  ![](https://proxy-prod.omnivore-image-cache.app/865x649,sYeg4f__Jtykh4sngbIvIC191TPsX89U4JKVE8hMbsas/https://i-blog.csdnimg.cn/blog_migrate/0c86a538d5817cde35b2018c558b0664.png){:height 530, :width 696}
+			  ![](https://proxy-prod.omnivore-image-cache.app/865x649,sYeg4f__Jtykh4sngbIvIC191TPsX89U4JKVE8hMbsas/https://i-blog.csdnimg.cn/blog_migrate/0c86a538d5817cde35b2018c558b0664.png)
 			  
 			  ![](https://proxy-prod.omnivore-image-cache.app/866x648,sfkw273JSAxc0BsWiB3LT0uum9J2Fmw7HwrCA5ZJJsnc/https://i-blog.csdnimg.cn/blog_migrate/20535fbaa2abb40330e5aa4c953ad631.png)
 			  
@@ -105,7 +105,7 @@
 			  
 			  ![](https://proxy-prod.omnivore-image-cache.app/296x426,saACIUaDTWX6vD_7Jvo0DnaazNUUuqDLpGh2gKt1HHGI/https://i-blog.csdnimg.cn/blog_migrate/7beeb5e22e5634be8349cc7ed8fffac4.png)
 			  
-			  进入到如下窗口，通过git下载noVNC、websockify-js
+			   进入到如下窗口，通过git下载noVNC、websockify-js
 			  
 			  ```crmsh
 			  
@@ -153,7 +153,7 @@
 			  node D:\VNC\node_modules\websockify-js\websockify\websockify.js --web D:\VNC\node_modules\noVNC 8000 localhost:5900
 			  ```
 			  
-			  命令行解释：
+			   命令行解释：
 			  
 			  ```taggerscript
 			  
@@ -161,7 +161,7 @@
 			  
 			  D:\VNC\node_modules\websockify-js\websockify\websockify.js // websockify.js文件路径
 			  
-			  --web D:\VNC\node_modules\noVNC // noVNCD文件路径
+			   --web D:\VNC\node_modules\noVNC // noVNCD文件路径
 			  
 			  8000 // 启动端口为8000，这个可以自己设，不一定就是8000
 			  
@@ -189,7 +189,7 @@
 			  
 			  ![](https://proxy-prod.omnivore-image-cache.app/1151x758,ssCsGbNLVgjAtLbR5bMGtV8PXzZD7K4N7ImHd9110JQ8/https://i-blog.csdnimg.cn/blog_migrate/31855fd29243816a8bb589bb3415ca9b.png)
 			  
-			  3.4、成功连接到本机
+			   3.4、成功连接到本机
 			  
 			  ![](https://proxy-prod.omnivore-image-cache.app/1200x1080,sYFGfYgJizKo-lZzaPA6YvVtRxW_RWTluRy2nmpL59MU/https://i-blog.csdnimg.cn/blog_migrate/b3b8537452e8ed8d59d54d639708149a.png)
 			  
@@ -197,7 +197,7 @@
 			  
 			  ![](https://proxy-prod.omnivore-image-cache.app/1053x597,sbMRaH3At-vNMC2c0QDmX6dzfB7tGVkeOx3SGxfFUbMc/https://i-blog.csdnimg.cn/blog_migrate/65e1dce5ea0fb452eeded2302572aa09.png)
 			  
-			  3.6、关闭代理服务，ctrl+c
+			   3.6、关闭代理服务，ctrl+c
 			  
 			  ![](https://proxy-prod.omnivore-image-cache.app/1048x591,sH9YySK5zZjviWRzDSKqRuNvqNGZc_85MOAyPrRCN2x0/https://i-blog.csdnimg.cn/blog_migrate/31c8e50a3ee892c0536de5222bb9e05e.png)
 			  
