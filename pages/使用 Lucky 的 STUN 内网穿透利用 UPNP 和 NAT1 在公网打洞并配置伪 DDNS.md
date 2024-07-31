@@ -107,7 +107,7 @@
 	- 下载地址：https://github.com/HMBSbige/NatTypeTester/releases/latest
 	- 推荐下载最小体积的那个，然后安装 .NET Desktop Runtime
 	- ![image.png](../assets/image_1722415862582_0.png)
-	- ![image](https://p0.meituan.net/csc/aa8d1d71687d0ecac8a2ef88823cce5840816.png)
+	- ![image.png](../assets/image_1722415888771_0.png)
 	- ## 安装 Lucky
 	- 官方文档：https://lucky666.cn/docs/install
 	- ### OpenWrt 安装
@@ -128,10 +128,10 @@
 	- 这边提供几种配置方式，建议大家都尝试一下，推荐将 Lucky 装拨号路由器上
 	- ### 配置 UPNP 转发
 	- 菜单 ->STUN 内网穿透 -> 穿透规则列表 -> 添加穿透规则
-	- ![image](https://img07.mifile.cn/v1/MI_542ED8B1722DC/6f1df9ad05c2e182f95ca6dcf7f44c5e.png)
+	- ![image.png](../assets/image_1722415923172_0.png)
 	- > 补充：新版已支持 UPNP，可以关掉 NAT-PMP，使用 UPNP，部分情况下兼容性更好
 	- 启用规则，复制 STUN 穿透公网地址，（用手机）连接到另一个网络（如移动数据）测试
-	- ![image](https://kjimg10.360buyimg.com/ott/jfs/t20250403/130219/2/31948/42538/642b0e8aFdfd09f39/f00caca1113c197c.png)
+	- ![image.png](../assets/image_1722415937587_0.png)
 	- 如果能够访问，说明穿透成功，您可以使用 STUN 穿透公网地址**临时**访问服务
 	- 我们反复开关该规则，可以看出公网地址的**端口一直在变化**
 	- ### 配置路由器转发
