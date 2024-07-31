@@ -259,23 +259,8 @@
 	- > PS：上面用到的 API Key、API 令牌 均可到这个链接创建：https://dash.cloudflare.com/profile/api-tokens
 	- **请求主体：**
 	- ```
-	  1
 	  ```
 	- ```
-	  {
-	  "action": "redirect",
-	  "expression": "(http.host eq \"此处填写域名\")",
-	  "description": "此处填写规则名称",
-	  "action_parameters": {
-	    "from_value": {
-	      "status_code": 301,
-	      "target_url": {
-	        "expression": "concat(\"http://#{ipAddr}\", http.request.uri.path)"
-	      },
-	      "preserve_query_string": true
-	    }
-	  }
-	  }
 	  ```
 	- **接口调用成功包含的字符串：**
 	- ```
