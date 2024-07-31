@@ -470,7 +470,7 @@
 	- 如果懒得折腾，可以使用成品的 PCDN 储存服务，<del>如大家都知道的 123 网盘，就是使用这个原理，降低了运营成本，才带来了继蓝奏云之后大文件免登录分享的体验</del>（割韭菜）
 	- ### Lucky+Cloudreve 实现自建 PCDN 网盘
 	- 给个思路，服务端利用云服务器内网穿透出来，下载文件 / 中转通过 PCDN 线路，可利用 Cloudreve 自带的 CDN 功能实现
-	- ![image.png](../assets/image_1722416833007_0.png) ![image](https://p0.meituan.net/csc/e74f959eee72a4ce7362e692c0d60c3c1439933.png){:height 404, :width 749}
+	- ![image.png](../assets/image_1722416833007_0.png)
 	- ### Lucky+RustDesk 实现自建远程桌面服务器
 	- 网上有教程，本人也尝试复现成功，一定程度上可以减轻云服务器的负担，但不方便更新地址，个人推荐搭配 Lucky 自定义脚本触发食用
 	- 打通大内网番外篇 无需公网，搭建 RustDesk 远程桌面 （基于 Lucky 的 STUN 穿透） 作者：qaz741wsd856
