@@ -287,10 +287,10 @@
 	- 点此乘坐电梯跳过此章节
 	- ![image.png](../assets/image_1722416358046_0.png)
 	- 创建页面规则
-	- ![image](https://kjimg10.360buyimg.com/ott/jfs/t20250403/132778/28/35200/95967/642b1513F0ef8f5a6/d2b667dbc08b6db4.png)
+	- ![image.png](../assets/image_1722416374668_0.png)
 	- 点击设置或编辑，保存，F12 抓包获取区域 ID 和规则 ID，https://dash.cloudflare.com/api/v4/zones/ 后面跟着那串就是，pagerules 前的是区域 ID，pagerules 后的是规则 ID
-	- ![image](https://img10.360buyimg.com/babel/jfs/t20260412/191924/13/43678/121217/6618d56bFe3157c9e/1fecf546ea610467.png)
-	- ![image](https://kjimg10.360buyimg.com/ott/jfs/t20250403/133852/29/30557/157635/642b15beF599be059/a8b86822d000420e.png)
+	- ![image.png](../assets/image_1722416391805_0.png)
+	- ![image.png](../assets/image_1722416407780_0.png)
 	- 回到 Lucky，点击编辑规则，找到 Webhook，点击开启，如下设置
 	- **接口地址：**
 	- ```
@@ -317,7 +317,7 @@
 	- ```
 	  Authorization: Bearer 你的令牌
 	  ```
-	- ![image](https://p0.meituan.net/csc/467a134202443816c3c3754f68a39966380670.png)
+	- ![image](https://p0.meituan.net/csc/467a134202443816c3c3754f68a39966380670.png){:height 718, :width 749}
 	- PS：上面用到的 API Key 均可到这个链接创建：https://dash.cloudflare.com/profile/api-tokens
 	- **请求主体：**
 	- ```
