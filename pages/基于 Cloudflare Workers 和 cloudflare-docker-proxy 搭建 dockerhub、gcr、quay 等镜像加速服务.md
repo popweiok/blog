@@ -216,11 +216,11 @@
 	- ![image.png](../assets/image_1722411819730_0.png)
 	- ### 等待部署完成
 	- 可以到 Github 查看 Action 执行进度
-	- ![image](https://img.lixueduan.com/docker/mirror/deploy-progress.png){:width 836 :height 437}
+	- ![image.png](../assets/image_1722411844185_0.png)
 	- 执行完成后，切换到 Cloudflare Dashboard ，不出意外的话就可以看到刚创建的 Worker 了。
-	- ![image](https://img.lixueduan.com/docker/mirror/cloudflare-workers.png){:width 836 :height 420}
+	- ![image.png](../assets/image_1722411876834_0.png)
 	- 切换到 Setting，等待 SSL 证书签发完成即可
-	- ![image](https://img.lixueduan.com/docker/mirror/cloudflare-workers-setting.png){:width 836 :height 398}
+	- ![image.png](../assets/image_1722411897289_0.png) ![image](https://img.lixueduan.com/docker/mirror/cloudflare-workers-setting.png){:width 836 :height 398}
 	- ## 使用说明
 	- 部署完成后，访问 https://docker.mydomain.com 就可以看到使用说明了。
 	- > 比如：https://docker.lixd.xyz
