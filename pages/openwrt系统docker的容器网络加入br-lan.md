@@ -2,7 +2,12 @@
   tags:: [[SendToLogseq]]
 	- docker的联网方式很多，但是openwrt有有br-lan，我们为何不利用一番呢
 	  命令如下：
-		- [[#caption]]==`docker network create -d bridge \\`==
+		- `docker network create -d bridge \
+		- --subnet=192.168.9.0/24 --gateway=192.168.9.1 \
+		- -o "com.docker.network.bridge.name"="br-lan" dn`
+		-
+		-
+		-
 		- --subnet=192.168.9.0/24 --gateway=192.168.9.1 \\
 		- -o "com.docker.network.bridge.name"="br-lan" dn
 	- *复制代码*
