@@ -187,16 +187,16 @@
 	  > 如果您没有 IPv6，您也可以使用免费的 Cloudflared 实现
 	  >
 	  > 如果您非要使用 IPv4 打洞，也不是不行，需要分别设置 A 记录 DDNS 和源站规则（Origin Rules）回源端口动态更新
-	-
+	- ![image.png](../assets/image_1722416061079_0.png)
 	- 如果需要使用优选，可以按照 SaaS 接入的教程来，这种网上一搜一大堆，反正就是在 SSL/TLS 自定义主机名那里添加**另一个域名**，然后配好 ACME，**回源可以任意**
-	- ![image](https://p0.meituan.net/csc/37f0b74f176b30da44de8e10fb479537387189.png)
+	- ![image.png](../assets/image_1722416077404_0.png)
 	- 接下来有多种实现方式，页面规则的话免费版每个域名只能设置 3 条，而且不够动态，目前增加了重定向规则，免费版每个域名可以设置 10 条，两种方式加起来可以总共创建 3+10=13 条规则
 	- **值得一提的是，所有操作均可通过 Cloudflare 的 API 自动执行**
 	- 废话不多说，赶紧开搞
 	- #### 重定向规则
 	- 创建页面规则
 	- 首先进入规则 -> 重定向规则，创建一个规则
-	- ![image](https://p0.meituan.net/csc/8c9d18aba9bb231daa16e69bfed984e7276295.png)
+	- ![image.png](../assets/image_1722416100054_0.png)
 	- 这边需要使用动态重定向
 	- 如果… 当传入请求匹配时… 自定义筛选表达式
 	- ```
@@ -216,7 +216,7 @@
 	  ```
 	- 状态代码：301
 	- 点击部署
-	- ![image](https://p1.meituan.net/csc/7876ca932dd3b721c035c15b4dc3845e547987.png)
+	- ![image](https://p1.meituan.net/csc/7876ca932dd3b721c035c15b4dc3845e547987.png){:height 689, :width 749}
 	- 为了获取相关参数信息，我们需要重新编辑以下，模拟接口请求
 	- 点击设置或编辑，重新部署，F12 抓包，从**请求地址**中获取**区域 ID**、 **规则集 ID** 和 **规则 ID**
 	- ![image](https://p0.meituan.net/csc/8c94a199f6d725df5109f3a2a23d8864165052.png)
