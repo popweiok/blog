@@ -394,8 +394,7 @@
 		  ![image.png](../assets/image_1722416596227_0.png) 
 		  * 获取证书，这边 Lucky 可以申请
 		  
-		  ![image](https://p0.meituan.net/csc/08578f6988a47045b39f1d6ad0ff9e84237992.png)
-		  
+		  ![image.png](../assets/image_1722416651307_0.png) 
 		  ![image](https://p0.meituan.net/csc/be8b4b95ce95c9282e69b98017f1af3161120.png)
 		  
 		  * 将此证书下载并部署到您的服务端上，如果您的服务端不支持证书，您可以使用 Nginx 等专业工具或 Lucky 的反向代理功能将其套用证书
