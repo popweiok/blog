@@ -317,33 +317,8 @@
 	- ```
 	  Authorization: Bearer 你的令牌
 	  ```
-	- ![image](https://p0.meituan.net/csc/467a134202443816c3c3754f68a39966380670.png){:height 718, :width 749}
 	- PS：上面用到的 API Key 均可到这个链接创建：https://dash.cloudflare.com/profile/api-tokens
 	- **请求主体：**
-	- ```
-	  1
-	  2
-	  3
-	  4
-	  5
-	  6
-	  7
-	  8
-	  9
-	  10
-	  11
-	  12
-	  13
-	  14
-	  15
-	  16
-	  17
-	  18
-	  19
-	  20
-	  21
-	  22
-	  ```
 	- ```
 	  {
 	  "targets": [
