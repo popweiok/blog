@@ -350,10 +350,10 @@
 	- ```
 	  "success": true
 	  ```
-	- ![image](https://kjimg10.360buyimg.com/ott/jfs/t20250403/75893/4/26884/79257/642b1456Fc653a524/27db6f1c10ada9f7.png)
+	- ![image.png](../assets/image_1722416515276_0.png)
 	- 点击 Webhook 手动触发测试按钮，如无异常，应该出现 `"success":true`
 	- 然后回到 Cloudflare，可以发现配置被修改，已经不是刚才的值，说明伪 DDNS 配置成功
-	- ![image](https://kjimg10.360buyimg.com/ott/jfs/t20250403/161401/29/32409/39758/642b1627Feb43710a/4702241fa76c3dd4.png)
+	- ![image.png](../assets/image_1722416532283_0.png)
 	- ### 自定义脚本触发
 	- 另外还可以使用自定义脚本触发，配合其他程序（如 curl、docker），实现更复杂的功能
 	- ![image](https://img10.360buyimg.com/babel/jfs/t20260220/125060/4/41564/11939/65d4ea14F9ee29827/5804d379737ab650.png)
