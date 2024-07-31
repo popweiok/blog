@@ -259,8 +259,20 @@
 	- > PS：上面用到的 API Key、API 令牌 均可到这个链接创建：https://dash.cloudflare.com/profile/api-tokens
 	- **请求主体：**
 	- ```
-	  ```
-	- ```
+	  {
+	  "action": "redirect",
+	  "expression": "(http.host eq \"此处填写域名\")",
+	  "description": "此处填写规则名称",
+	  "action_parameters": {
+	    "from_value": {
+	      "status_code": 301,
+	      "target_url": {
+	        "expression": "concat(\"http://#{ipAddr}\", http.request.uri.path)"
+	      },
+	      "preserve_query_string": true
+	    }
+	  }
+	  }
 	  ```
 	- **接口调用成功包含的字符串：**
 	- ```
@@ -269,11 +281,11 @@
 	- ```
 	  "success": true
 	  ```
-	- ![image](https://p0.meituan.net/csc/31e119d0b0e680980a187b29c9ac4415288975.png)
+	- ![image.png](../assets/image_1722416338164_0.png)
 	- #### 页面规则
 	- 免费版仅可创建三条规则，而且页面规则已作废，不推荐使用，请使用重定向规则替代
 	- 点此乘坐电梯跳过此章节
-	- ![image](https://p0.meituan.net/csc/76ab0e408fd1dd2cd6b397bc0c93027c470080.png)
+	- ![image.png](../assets/image_1722416358046_0.png)
 	- 创建页面规则
 	- ![image](https://kjimg10.360buyimg.com/ott/jfs/t20250403/132778/28/35200/95967/642b1513F0ef8f5a6/d2b667dbc08b6db4.png)
 	- 点击设置或编辑，保存，F12 抓包获取区域 ID 和规则 ID，https://dash.cloudflare.com/api/v4/zones/ 后面跟着那串就是，pagerules 前的是区域 ID，pagerules 后的是规则 ID
