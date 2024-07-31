@@ -403,16 +403,16 @@
 	- 此时通过 http /https 访问 example.com 会跳转到 https 的 stun.example.com: 端口，并且浏览器不会提示证书错误
 	- ### 如何实现双栈访问？
 	- 您也可以设置 IPv6 DDNS，然后让使用 IPv6 访问的 example.com 跳转到 IPv6 的地址 ipv6.example.com，IPv4 访问的 example.com 跳转到 IPv4 的地址 ipv4.example.com，减少 UDP 流量
-	- ![image](https://p1.meituan.net/csc/0e63ccb7177ef472d61ec544029e591a469390.png)
+	- ![image.png](../assets/image_1722416732927_0.png)
 	- 需要注意最终的规则 IPv6 的那条应该再 IPv4 的上面，以下截图未加端口号，一般 IPv6 有公网，端口号固定，IPv4 需要配置 STUN 规则中的 Webhook 更新 IP 地址和 端口
 	- 如果您的入口跳转域名使用了优选，需要包含 IPv6 地址，否则只会跳转到 IPv4
-	- ![image](https://p0.meituan.net/csc/6dc7e3a6311bed9c71dcb99b1e42661d171157.png)
-	- ![image](https://p0.meituan.net/csc/f774e3dac575719d8f1c071cf6f54bbb172441.png)
+	- ![image.png](../assets/image_1722416745524_0.png)
+	- ![image.png](../assets/image_1722416763155_0.png)
 	- ### Lucky+DSM 实现文件点对点分享
 	- 感谢网友 @Rowan 无意发现这个方法，受邀在该文章上写出来，分享给大家
 	- 在群辉默认分享的时候，可以设置一下固定地址，可以免去修改地址的繁琐
 	- 控制面板 > 外部访问，填写固定域名，端口默认 80，在文件分享时会默认从这个域名的 80 端口分享，也就是分享的时候不再是 ip + 端口，避免 ip 和端口跳动
-	- ![image](https://img10.360buyimg.com/babel/jfs/t20260412/133109/29/44097/40013/6618d2e3F40d37e26/f0f2defaa8ba7b81.png)
+	- ![image](https://img10.360buyimg.com/babel/jfs/t20260412/133109/29/44097/40013/6618d2e3F40d37e26/f0f2defaa8ba7b81.png){:height 447, :width 749}
 	- 这样直接访问分享出来的链接就可以跳转到 NAS 的 IP 地址 + 端口了，而且无需手动修改
 	- ![image](https://img10.360buyimg.com/babel/jfs/t20260412/182630/22/43955/24890/6618d32fFc9705a37/494751ff5c9df046.png)
 	- 这样可以避免使用内网穿透，无需 QC，直接连接公网 IP + 端口下载文件，且容易分享
