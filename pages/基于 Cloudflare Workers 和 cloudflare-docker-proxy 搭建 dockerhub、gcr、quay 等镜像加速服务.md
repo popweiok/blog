@@ -220,7 +220,7 @@
 	- 执行完成后，切换到 Cloudflare Dashboard ，不出意外的话就可以看到刚创建的 Worker 了。
 	- ![image.png](../assets/image_1722411876834_0.png)
 	- 切换到 Setting，等待 SSL 证书签发完成即可
-	- ![image.png](../assets/image_1722411897289_0.png) ![image](https://img.lixueduan.com/docker/mirror/cloudflare-workers-setting.png){:width 836 :height 398}
+	- ![image.png](../assets/image_1722411897289_0.png){:width 836 :height 398}
 	- ## 使用说明
 	- 部署完成后，访问 https://docker.mydomain.com 就可以看到使用说明了。
 	- > 比如：https://docker.lixd.xyz
