@@ -25,5 +25,6 @@
 - [[备份PVE的配置信息，重装后快速恢复]]
 - [[网络虚拟化-Proxmox VE vxlan和openwrt]]
 - [[Proxmox VE pve添加已有的硬盘为存储]]
+- [[在Proxmox VE上运行龙芯loongarch虚拟机]]
 -
 -
