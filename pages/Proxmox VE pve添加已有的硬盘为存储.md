@@ -30,19 +30,19 @@
 	- ```
 	  ntfsfix /dev/sdb2
 	  ```
-	- ![image](https://foxi.buduanwang.vip/wp-content/uploads/2023/03/1678767073755.png){:width 758, :height 302}
+	- ![image.png](../assets/image_1722490131294_0.png)
 	- 之后再重新挂载
 	- `umount /dev/sdb2`
 	- `mount /dev/sdb2 /mnt/pve/hdd`
 	- 现在可以看到其中的文件了
-	- ![image](https://foxi.buduanwang.vip/wp-content/uploads/2023/03/1678767174732.png){:width 1061 :height 278}
+	- ![image.png](../assets/image_1722490143667_0.png)
 	- 随后进pve 网页添加目录存储.
 	- ID随便取，目录填写硬盘的挂载路径，内容全部勾选
-	- ![image](https://foxi.buduanwang.vip/wp-content/uploads/2023/03/1678767244075.png){:width 1061 :height 530}
+	- ![image.png](../assets/image_1722490152166_0.png)
 	- 接下来就可以在网页上使用了。
-	- ![image](https://foxi.buduanwang.vip/wp-content/uploads/2023/03/1678767361407.png){:width 1061 :height 296}
+	- ![image.png](../assets/image_1722490162110_0.png)
 	- 如果打算永久挂载，需要配置开机挂载。
 	- 查看硬盘的PARTUUID，使用blkid查看，比如我的ntfs分区是/dev/sdb2
-	- ![image](https://foxi.buduanwang.vip/wp-content/uploads/2023/03/1678768054595.png){:width 1061 :height 150}将这个PARTUUID写进fstab，注意将我们常规的defaults选项换成`nofail,x-systemd.device-timeout=15s` 这样防止找不到硬盘，而卡引导
-	- ![image](https://foxi.buduanwang.vip/wp-content/uploads/2023/03/1678846432630.png){:width 1061 :height 141}保存就可以了。
+	- ![image.png](../assets/image_1722490179690_0.png) 将这个PARTUUID写进fstab，注意将我们常规的defaults选项换成`nofail,x-systemd.device-timeout=15s` 这样防止找不到硬盘，而卡引导
+	- ![image](https://foxi.buduanwang.vip/wp-content/uploads/2023/03/1678846432630.png){:width 758, :height 108}保存就可以了。
 -
