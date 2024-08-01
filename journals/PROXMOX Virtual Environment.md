@@ -22,5 +22,6 @@
 - [[PVE中ikuai爱快软路由网卡/E1000/virtio/vmxnet性能对比]]
 - [[Proxmox VE 虚拟机磁盘的选择]]
 - [[Proxmox VE 限制zfs的使用量]]
+- [[备份PVE的配置信息，重装后快速恢复]]
 -
 -
