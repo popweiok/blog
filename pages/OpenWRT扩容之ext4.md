@@ -166,7 +166,7 @@
 		  vi /boot/grub/grub.cfg
 		  # 将下划线的两个分区ID修改成新分区的UUID即可
 		  ```
-		  ![image](https://i-blog.csdnimg.cn/blog_migrate/6a4c26afe9eb6557522249d3dcd6fad7.png){:width 680, :height 134}
+		  ![image.png](../assets/image_1722475621313_0.png)
 		- 保存文件
 		  logseq.order-list-type:: number
 		  ```shell
