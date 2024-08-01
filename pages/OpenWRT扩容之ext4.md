@@ -99,7 +99,7 @@
 	  ````
 	- #### 直接扩容
 	- 直接将原有根分区扩容，如下图：
-	- ![image](https://i-blog.csdnimg.cn/blog_migrate/fbc054c54490700da715437bc5bff7d4.png){:width 640 :height 167}
+	- ![image.png](../assets/image_1722475526225_0.png)
 	- ##### 操作步骤
 		- 删除旧分区（需要记住旧分区的磁盘起始位置，如图下划线位置），并创建新分区
 		  logseq.order-list-type:: number
@@ -123,8 +123,7 @@
 		  # 输入w写入磁盘
 		  w
 		  ```
-		  ![image](https://i-blog.csdnimg.cn/blog_migrate/a52930594e2004ad8dad670f48e1393a.png){:width 680 :height 380}
-		  ![image](https://i-blog.csdnimg.cn/blog_migrate/ee1570d8cfdadee65f39d36a90e61d6f.png){:width 680 :height 200}
+		  ![image.png](../assets/image_1722475542922_0.png) ![image](https://i-blog.csdnimg.cn/blog_migrate/ee1570d8cfdadee65f39d36a90e61d6f.png){:width 680 :height 200}
 		- 查看分区效果
 		  logseq.order-list-type:: number
 		  ```shell
