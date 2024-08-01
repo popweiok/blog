@@ -7,4 +7,5 @@
 - [[openwrt系统docker的容器网络加入br-lan]]
 - [[使用 Lucky 的 STUN 内网穿透利用 UPNP 和 NAT1 在公网打洞并配置伪 DDNS]]
 - [[OpenWRT扩容之ext4]]
+- [[OpenWRT扩容之f2fs]]
 -
