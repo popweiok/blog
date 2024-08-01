@@ -26,19 +26,16 @@
 	  这里用到爱快的流控分流功能。需要在爱快里面自建一个运营商。在运营商里面绑定中国IP段，以便筛选国内的流量走国内线路，国外流量走 OpenWrt 。
 	  操作流程: 流控分流>多线负载>自定义运营商
 	  点击 添加
-	- ![image](https://static.chiphell.com/forum/202209/04/222236cd2r0iivfm5782r3.png){:width 758, :height 451}
-	  由于目前IP表有6000多行，需要前5000条和后面1000多条分2次添加。
-	  ![image](https://static.chiphell.com/forum/202209/04/222257mfccbmnfeubm2ft5.png){:width 980 :height 365}
-	  回到 流控分流>多线负载，点添加
-	  ![image](https://static.chiphell.com/forum/202209/04/222317m85j58q528zauu0k.png){:width 980 :height 573}
-	  负载模式：源IP+目的IP+目的端口
+	- ![image.png](../assets/image_1722476393001_0.png) 由于目前IP表有6000多行，需要前5000条和后面1000多条分2次添加。
+	  ![image.png](../assets/image_1722476411420_0.png) 回到 流控分流>多线负载，点添加
+	  ![image.png](../assets/image_1722476427175_0.png) 负载模式：源IP+目的IP+目的端口
 	  运营商：国内
 	  负载比例：wan1  1  启用
 	  保存，然后点启用。
 	- 接下来:
 	  网络设置 > 内外网设置
 	  点击 wan1 ，勾上 掉线自动切换。
-	- ![image](https://static.chiphell.com/forum/202209/04/222410o593g3y5ync556tn.png){:width 978 :height 316}
+	- ![image](https://static.chiphell.com/forum/202209/04/222410o593g3y5ync556tn.png){:width 758, :height 253}
 	  网络设置 > 内外网设置
 	  点击 wan2，勾上 设此条线路为默认网关 和 掉线自动切换。
 	  线路检测  PING
