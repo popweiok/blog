@@ -18,18 +18,18 @@
 		- EXT4固件
 		  logseq.order-list-type:: number
 		  固件包名称中包含有`ext4`关键字，可以参考`固件分类关键字示意图`图片。该种类型的固件硬盘空间划分如下：
-		  ![image](https://i-blog.csdnimg.cn/blog_migrate/0ae7cbd731bf15e2623476248df879df.png){:width 627 :height 88}
+		  ![image.png](../assets/image_1722474776447_0.png)
 		- SQUASHFS固件
 		  logseq.order-list-type:: number
 		  固件包名称中包含有`squashfs`关键字，同样参考`固件分类关键字示意图`图片。该种类型的固件硬盘空间划分如下：
-		  ![image](https://i-blog.csdnimg.cn/blog_migrate/8ca1a3c31de8bfaf48721c85c49f4114.png){:width 628 :height 87}
+		  ![image.png](../assets/image_1722474802596_0.png)
 	- **固件分类关键字示意图：**
-	- ![image](https://i-blog.csdnimg.cn/blog_migrate/18fb52e55962a3b0a79a26efc6576625.png){:width 712 :height 242}
+	- ![image.png](../assets/image_1722474820453_0.png)
 	- ### EXT4固件扩容方式
 	- #### 新建分区扩容
 	- 新建分区，将根目录挂载到新分区；（推荐)
 	- 在未格式化区域创建新分区，然后将原来系统文件分区的所有内容拷贝到新分区，最后将系统根目录默认挂载点变成新分区即可。
-	- ![image](https://i-blog.csdnimg.cn/blog_migrate/749bb30a3824236319f4857ec954647d.png){:width 633 :height 157}
+	- ![image.png](../assets/image_1722474832051_0.png)
 	- ##### 操作步骤
 		- 查看当前磁盘信息
 		  logseq.order-list-type:: number
