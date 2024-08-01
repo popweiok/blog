@@ -11,14 +11,14 @@
 	  设备2：vm虚拟机。使用的vmbr1（virtio）
 	- 测试内容为SMB共享。
 	- 网络环境如下
-	- ![image](https://img.buduanwang.vip/images/2020/05/05/QQ20200505192937.png){:width 702 :height 454}
+	- ![image.png](../assets/image_1722481699459_0.png)
 	- ## 1、网卡为e1000
 	- 速度平均在40m/s
-	- ![image](https://img.buduanwang.vip/images/2020/05/05/e1000.png){:width 576 :height 335}
+	- ![image.png](../assets/image_1722481711935_0.png)
 	- ## 2、网卡为vmxnet3
 	- 平均20M/s
-	- ![image](https://img.buduanwang.vip/images/2020/05/05/vmxnet3.png){:width 533 :height 358}
+	- ![image.png](../assets/image_1722481722305_0.png)
 	- ## 3、网卡为virtio
 	- 惊艳！完全满速！
-	- ![image](https://img.buduanwang.vip/images/2020/05/05/virtoio.png){:width 811 :height 524}
+	- ![image.png](../assets/image_1722481736406_0.png)
 -
