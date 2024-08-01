@@ -45,7 +45,7 @@
 	  这样当 OpenWrt 不能正常访问国外网，流量会切换到 wan1 。
 	  ![image.png](../assets/image_1722476471774_0.png)
 	- B. OpenWrt WAN 和 LAN 设置
-	- ![image](https://static.chiphell.com/forum/202209/04/222438gnzss7oex9o7sx67.png){:width 979 :height 478}
+	- ![image.png](../assets/image_1722476521266_0.png)
 	- OpenWrt 的 WAN 口接在爱快的LAN下面。
 	  爱快 wan2 口接的是 OpenWrt 的 lan 口下面，本例中爱快 wan2 的 IP 设置为192.168.77.2 。
 	  OpenWrt 上可以跑各种我们需要的留学服务。
@@ -53,8 +53,7 @@
 	  把 OpenWrt 自身访问网络出口固定设置为 wan1 。
 	  爱快 流控分流 > 分流设置 > 端口分流
 	  添加 OpenWrt WAN 口的 IP 以 wan1 口为流量出口。
-	- ![image](https://static.chiphell.com/forum/202209/04/222456spf47hkpk7vphypm.png){:width 980 :height 358}
-	  启用。
+	- ![image.png](../assets/image_1722476533905_0.png) 启用。
 	- 需要的维护
 	  国内的 IP 表会缓慢地更新，所以建议每半年更新一次 IP 表。
 	- F & Q
