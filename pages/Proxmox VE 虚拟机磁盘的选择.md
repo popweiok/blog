@@ -44,7 +44,7 @@
 	- 驱动
 	- vioscsi.sys
 	- viostor.sys
-	- 然后我们将磁盘控制器改成VirtIO-SCSI-Single
+	- ![image.png](../assets/image_1722482174156_0.png) 然后我们将磁盘控制器改成VirtIO-SCSI-Single
 	- 在OS上面再次看
 	- ![image.png](../assets/image_1722481932043_0.png)
 	- 显而易见，VirtIO-SCSI-Single控制器，是一个SCSI磁盘对应一个控制器，这样可以提高性能
