@@ -48,13 +48,13 @@
 	- 在OS上面再次看
 	- ![image.png](../assets/image_1722481932043_0.png)
 	- 显而易见，VirtIO-SCSI-Single控制器，是一个SCSI磁盘对应一个控制器，这样可以提高性能
-	- ![image](https://foxi.buduanwang.vip/wp-content/uploads/2021/07/image-45.png){:width 1053 :height 232}
+	- ![image.png](../assets/image_1722481945060_0.png)
 	- 有个明显的例子如下https://c.cra.moe/t/topic/24
-	- ![image](https://foxi.buduanwang.vip/wp-content/uploads/2021/07/image-46.png){:width 911 :height 292}
+	- ![image.png](../assets/image_1722481954724_0.png)
 	- 这边跑了个数据
-	- ![image](https://foxi.buduanwang.vip/wp-content/uploads/2021/07/image-47.png){:width 480 :height 333}
+	- ![image.png](../assets/image_1722481965760_0.png)
 	- 上面是VirtIO-SCSI-Single模式，下面是普通的VirtIO-SCSI模式
-	- ![image](https://foxi.buduanwang.vip/wp-content/uploads/2021/07/image-48.png){:width 479 :height 327}
+	- ![image.png](../assets/image_1722481975586_0.png)
 	- 两者看起来差距不大。但是从理论上，还是single模式效益高点。
 	- 所以总目前的结论来看，在PVE中要发挥最大的磁盘性能，建议使用VirtIO-SCSI-Single模式的SCSI硬盘。
 -
