@@ -69,7 +69,7 @@
 	- 下载之后，使用qm importdisk导入虚拟机参考：佛西博客 - pve为vm导入已有的磁盘镜像/qcow2/vmdk (buduanwang.vip)
 	- 注意，设置好了之后，还要给虚拟机启动选项，设置成scsi0启动
 	- ![image.png](../assets/image_1722490486091_0.png)
-	- ![image](https://foxi.buduanwang.vip/wp-content/uploads/2023/01/QQ%E6%88%AA%E5%9B%BE20230128114043.png)
+	- ![image.png](../assets/image_1722490509384_0.png)
 	- 随后将Arch设置成aarch64，如果是arm版本pve则不用再设置了。
 	- `qm set 你的虚拟机id -arch aarch64`
 	- 将虚拟机的qemu cmdline导出来
@@ -79,11 +79,11 @@
 	- 使用编辑器编辑
 	- `nano loongarch64.kvm`
 	- 把`/usr/bin/kvm` 替换成`/usr/bin/qemu-system-loongarch64`
-	- ![image](https://foxi.buduanwang.vip/wp-content/uploads/2023/01/QQ%E6%88%AA%E5%9B%BE20230128115007.png)
+	- ![image.png](../assets/image_1722490525938_0.png)
 	- 删除smbios和2个bios字段，如下面所示的白色选中部分。
-	- ![image](https://foxi.buduanwang.vip/wp-content/uploads/2023/01/QQ%E6%88%AA%E5%9B%BE20230128115232.png)
+	- ![image.png](../assets/image_1722490533905_0.png)
 	- 确保没有-cpu 选项。如下面有个-cpu,确保没有。
-	- ![image](https://foxi.buduanwang.vip/wp-content/uploads/2023/01/QQ%E6%88%AA%E5%9B%BE20230128115456.png)
+	- ![image.png](../assets/image_1722490544476_0.png)
 	- 在末尾添加一个选项
 	- `-bios QEMU_EFI_7.2.fd`
 	- 此时保存文件，然后执行命令
