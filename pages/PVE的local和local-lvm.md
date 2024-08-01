@@ -91,7 +91,7 @@
 	  ```
 	- 当然删除了lvm-thin之后，还要修改一下储存配置。
 	- 在网页上，删除lvm-thin
-	- ![image](https://foxi.buduanwang.vip/wp-content/uploads/2021/09/QQ%E6%88%AA%E5%9B%BE20210927104710.png){:width 1061 :height 239}
+	- ![image.png](../assets/image_1722481535904_0.png)
 	- 这样做了，我们就可以进入目录
 	- /var/lib/vz查看所有的内容了。
 	- ```
