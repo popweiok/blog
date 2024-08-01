@@ -1,7 +1,7 @@
 - [佛西博客 - Proxmox VE 虚拟机磁盘的选择](https://foxi.buduanwang.vip/virtualization/1214.html/)
   tags:: [[SendToLogseq]]
 	- 这么多类型？怎么选才能让PVE的磁盘性能得到最优的结果？
-	- ![image](https://foxi.buduanwang.vip/wp-content/uploads/2021/07/image-40.png){:width 440 :height 280}
+	- ![image.png](../assets/image_1722481884861_0.png)
 	- **先说一下基本的概念吧。**
 		- VirtIO Block:
 		  一种很好的半虚拟化磁盘驱动
@@ -20,13 +20,13 @@
 	- 与 virtio-blk 相比，Virtio-SCSI 提供了直接连接到 SCSI LUN 的能力，并显着提高了可扩展性。virtio-SCSI 的优势在于它能够处理数百个设备，而 virtio-blk 只能处理大约 30 个设备并耗尽 PCI 插槽。
 	- virtio-scsi 旨在取代 virtio-blk，保留了 virtio-blk 的性能优势，同时提高了存储可扩展性，允许通过单个控制器访问多个存储设备，并能够重用客户操作系统的 SCSI 堆栈。
 	- 简要的可以参考下图
-	- ![image](https://foxi.buduanwang.vip/wp-content/uploads/2021/07/image-41.png){:width 908 :height 158}
+	- ![image.png](../assets/image_1722481894407_0.png)
 	- 引用于：https://www.cnblogs.com/kylingx/p/11704994.html
 	- 从实际上看
 	- 我们创建一个虚拟机，使用VirtIO SCSI控制器，创建了2个SCSI设备，一个VirtIO BLK设备。
-	- ![image](https://foxi.buduanwang.vip/wp-content/uploads/2021/07/image-43.png){:width 580 :height 253}
+	- ![image.png](../assets/image_1722481906138_0.png)
 	- 在系统下可以看到如下信息
-	- ![image](https://foxi.buduanwang.vip/wp-content/uploads/2021/07/image-42.png){:width 530 :height 195}
+	- ![image.png](../assets/image_1722481917569_0.png)
 	- 从上面的信息来看，
 	- VirtIO BLK是有独立的磁盘控制器的，叫做：Red Hat VirtIO Scsi controller。
 	  VirtIO SCSI控制器名字叫做：Red Hat VirtIO SCSI pass-through contoller
@@ -46,7 +46,7 @@
 	- viostor.sys
 	- 然后我们将磁盘控制器改成VirtIO-SCSI-Single
 	- 在OS上面再次看
-	- ![image](https://foxi.buduanwang.vip/wp-content/uploads/2021/07/image-44.png){:width 448 :height 218}
+	- ![image.png](../assets/image_1722481932043_0.png)
 	- 显而易见，VirtIO-SCSI-Single控制器，是一个SCSI磁盘对应一个控制器，这样可以提高性能
 	- ![image](https://foxi.buduanwang.vip/wp-content/uploads/2021/07/image-45.png){:width 1053 :height 232}
 	- 有个明显的例子如下https://c.cra.moe/t/topic/24
