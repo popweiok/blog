@@ -69,5 +69,9 @@
 	  爱快会加载我们自定的运营商IP表，所有的请求会按照 流控分流 > 分流设置 > 多线负载 里面的设定去走出口。国内的请求会固定走 wan1 ，表里没有覆盖到的 IP 默认走 wan2 。因为海外 IP 表很大，这算是取巧的操作。这个设置的妙处请自行体会。(当然了，你也可以反向操作。加载一张海外的 IP 表绑定在 wan2 上，不设国内 IP 表。让所有的流量默认走 wan1 。由于海外的 IP 表很大，所以我认为这个操作会占用更多的 IP 比对的时间可能会降低效率。)
 -
 - 参考:
-- 参考1.{{{video https://www.bilibili.com/read/cv30752664/?jump_opus=1}}
+	- 1.{{{video https://www.bilibili.com/read/cv30752664/?jump_opus=1}}
+	- 2.https://dev.leiyanhui.com/route/ikuai-bypass-joyanhui/
+	- 3. iKuai Bypass修改版 说明
+	  fork 自 https://github.com/ztc1997/ikuai-bypass/
+	  项目地址 https://github.com/joyanhui/ikuai-bypass/
 -
