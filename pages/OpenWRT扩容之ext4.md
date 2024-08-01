@@ -123,13 +123,13 @@
 		  # 输入w写入磁盘
 		  w
 		  ```
-		  ![image.png](../assets/image_1722475542922_0.png) ![image](https://i-blog.csdnimg.cn/blog_migrate/ee1570d8cfdadee65f39d36a90e61d6f.png){:width 680 :height 200}
+		  ![image.png](../assets/image_1722475542922_0.png) ![image.png](../assets/image_1722475575164_0.png)
 		- 查看分区效果
 		  logseq.order-list-type:: number
 		  ```shell
 		  fdisk -l
 		  ```
-		  ![image](https://i-blog.csdnimg.cn/blog_migrate/a049afee7bd8b4f5596e384ffd012a15.png){:width 680 :height 73}
+		  ![image.png](../assets/image_1722475593410_0.png)
 		- 设置循环设备
 		  logseq.order-list-type:: number
 		  ```shell
@@ -158,7 +158,7 @@
 		  ```shell
 		  blkid
 		  ```
-		  ![image](https://i-blog.csdnimg.cn/blog_migrate/c1aa069d4076687fea8866782e66baa4.png){:width 680 :height 67}
+		  ![image.png](../assets/image_1722475609222_0.png)
 		- 修改系统引导
 		  logseq.order-list-type:: number
 		  ```shell
@@ -166,7 +166,7 @@
 		  vi /boot/grub/grub.cfg
 		  # 将下划线的两个分区ID修改成新分区的UUID即可
 		  ```
-		  ![image](https://i-blog.csdnimg.cn/blog_migrate/6a4c26afe9eb6557522249d3dcd6fad7.png){:width 680 :height 126}
+		  ![image](https://i-blog.csdnimg.cn/blog_migrate/6a4c26afe9eb6557522249d3dcd6fad7.png){:width 680, :height 134}
 		- 保存文件
 		  logseq.order-list-type:: number
 		  ```shell
