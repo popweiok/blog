@@ -68,10 +68,10 @@
 		  ```
 		- 网页登录openwrt，选择系统挂载点，选择添加
 		  logseq.order-list-type:: number
-		  ![image](https://i-blog.csdnimg.cn/blog_migrate/f767fd19eb6c0a20dfc4c64ba7355f3e.png){:width 680 :height 189}
+		  ![image.png](../assets/image_1722475077170_0.png)
 		- 选择新创建的分区，并挂载至根目录，保存后应用
 		  logseq.order-list-type:: number
-		  ![image](https://i-blog.csdnimg.cn/blog_migrate/41e03e7ab646dbc55b31bbf7b8ad2421.png){:width 680 :height 398}
+		  ![image.png](../assets/image_1722475089885_0.png)
 		- 复制`根目录准备`区域的命令如下
 		  logseq.order-list-type:: number
 		  ```shell
