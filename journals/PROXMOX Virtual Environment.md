@@ -18,4 +18,5 @@
 - ### [[Proxmox VE存储入门]]
 - ### [[正规表达式]]
 - ### [[爱快 & OpenWrt 分流网络拓扑]]
--
+- [[]]
+- # PVE的local和local-lvm
