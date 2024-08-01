@@ -61,14 +61,15 @@
 	  wget -P /usr/share/kvm/ https://mirrors.wsyu.edu.cn/loongarch/2022.09/images/QEMU_EFI_7.2.fd
 	  ```
 	- 创建一个普通的虚拟机，磁盘需要scsi，磁盘控制器选择virtio-scsi，如果对KVM不了解，请严格如图所示。龙芯CPU最大为4个，所以最多选4核。内存随意。
-	- ![image](https://foxi.buduanwang.vip/wp-content/uploads/2023/01/QQ%E6%88%AA%E5%9B%BE20230128112601.png){:width 100 :height 570}
+	- ![image.png](../assets/image_1722490450296_0.png)
 	- 下载龙芯qcow2镜像
 	- ```
 	  wget -P /root https://mirrors.wsyu.edu.cn/loongarch/2022.09/images/archlinux-mate-2022.12.03-loong64.qcow2
 	  ```
 	- 下载之后，使用qm importdisk导入虚拟机参考：佛西博客 - pve为vm导入已有的磁盘镜像/qcow2/vmdk (buduanwang.vip)
 	- 注意，设置好了之后，还要给虚拟机启动选项，设置成scsi0启动
-	- ![image](https://foxi.buduanwang.vip/wp-content/uploads/2023/01/QQ%E6%88%AA%E5%9B%BE20230128114026.png) ![image](https://foxi.buduanwang.vip/wp-content/uploads/2023/01/QQ%E6%88%AA%E5%9B%BE20230128114043.png)
+	- ![image.png](../assets/image_1722490486091_0.png)
+	- ![image](https://foxi.buduanwang.vip/wp-content/uploads/2023/01/QQ%E6%88%AA%E5%9B%BE20230128114043.png)
 	- 随后将Arch设置成aarch64，如果是arm版本pve则不用再设置了。
 	- `qm set 你的虚拟机id -arch aarch64`
 	- 将虚拟机的qemu cmdline导出来
