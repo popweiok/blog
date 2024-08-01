@@ -62,7 +62,7 @@
 	- 这里给一教程，删除local-lvm，并且将所有空间给到pve-root。
 	- 注意！请先确保自己的虚拟机没有位于lvm-thin上，若有，请先移动到local
 	- 编辑local，勾选所有内容，并确认。就
-	- ![image](https://foxi.buduanwang.vip/wp-content/uploads/2021/09/QQ%E6%88%AA%E5%9B%BE20210927104722.png){:width 690 :height 335}
+	- ![image.png](../assets/image_1722481499391_0.png)
 	- 可以在虚拟机配置栏，选择磁盘，点击移动磁盘到其他磁盘上就行。
 	- 使用命令删除lvm-thin `lvremove /dev/pve/data`，
 	- ```
