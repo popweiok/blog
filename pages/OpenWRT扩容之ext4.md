@@ -53,13 +53,13 @@
 		  # 输入要创建的分区大小，例如要创建3GB，可以输入+3G即可
 		  # 最后输入w写入磁盘
 		  ```
-		  ![image.png](../assets/image_1722475001354_0.png) ![image](https://i-blog.csdnimg.cn/blog_migrate/adf5f4187e6e2371e2460f741e0a8744.png){:width 680 :height 119}
+		  ![image.png](../assets/image_1722475001354_0.png) ![image.png](../assets/image_1722475043975_0.png)
 		- 查看分区效果
 		  logseq.order-list-type:: number
 		  ```shell
 		  fdisk -l
 		  ```
-		  ![image](https://i-blog.csdnimg.cn/blog_migrate/f495fdb9e91c40669946558a2272e41e.png){:width 680 :height 96}
+		  ![image.png](../assets/image_1722475058870_0.png)
 		- 格式化分区
 		  logseq.order-list-type:: number
 		  ```shell
