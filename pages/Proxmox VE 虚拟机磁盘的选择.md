@@ -32,18 +32,6 @@
 	  VirtIO SCSI控制器名字叫做：Red Hat VirtIO SCSI pass-through contoller
 	- VirtIO BLK磁盘名叫做：Red Hat SCSI Disk Device
 	  VirtIO SCSI磁盘名叫做：QEMU QEMU HARDDISK SCSI Disk Device
-	-
-	- VirtIO-SCSI
-	- VirtIO-BLK
-	- 磁盘名
-	- QEMU QEMU HARDDISK SCSI Disk Device
-	- Red Hat SCSI Disk Device
-	- 控制器
-	- Red Hat VirtIO SCSI pass-through contoller
-	- Red Hat VirtIO SCSI controller
-	- 驱动
-	- vioscsi.sys
-	- viostor.sys
 	- ![image.png](../assets/image_1722482174156_0.png) 然后我们将磁盘控制器改成VirtIO-SCSI-Single
 	- 在OS上面再次看
 	- ![image.png](../assets/image_1722481932043_0.png)
