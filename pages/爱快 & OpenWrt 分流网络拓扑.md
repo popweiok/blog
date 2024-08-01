@@ -35,8 +35,7 @@
 	- 接下来:
 	  网络设置 > 内外网设置
 	  点击 wan1 ，勾上 掉线自动切换。
-	- ![image](https://static.chiphell.com/forum/202209/04/222410o593g3y5ync556tn.png){:width 758, :height 253}
-	  网络设置 > 内外网设置
+	- ![image.png](../assets/image_1722476451228_0.png) 网络设置 > 内外网设置
 	  点击 wan2，勾上 设此条线路为默认网关 和 掉线自动切换。
 	  线路检测  PING
 	  检测地址 192.168.77.1 ,这个地址是 OpenWrt 的 lan 地址，检查它的存在与否，用来确定是不是要将流量切换到 wan1 。
@@ -44,7 +43,7 @@
 	  线路检测  HTTP
 	  检测地址 google.com
 	  这样当 OpenWrt 不能正常访问国外网，流量会切换到 wan1 。
-	  ![image](https://static.chiphell.com/forum/202209/04/222423tu37thftm33s3fm3.png){:width 980 :height 1041}
+	  ![image.png](../assets/image_1722476471774_0.png)
 	- B. OpenWrt WAN 和 LAN 设置
 	- ![image](https://static.chiphell.com/forum/202209/04/222438gnzss7oex9o7sx67.png){:width 979 :height 478}
 	- OpenWrt 的 WAN 口接在爱快的LAN下面。
