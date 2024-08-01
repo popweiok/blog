@@ -71,7 +71,7 @@
 - 参考:
 	- 1.{{{video https://www.bilibili.com/read/cv30752664/?jump_opus=1}}
 	- 2.https://dev.leiyanhui.com/route/ikuai-bypass-joyanhui/
-	- 3. iKuai Bypass修改版 说明
+	- 3. iKuai Bypass修改版 
 	  fork 自 https://github.com/ztc1997/ikuai-bypass/
 	  项目地址 https://github.com/joyanhui/ikuai-bypass/
 -
