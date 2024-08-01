@@ -44,5 +44,5 @@
 	- 如果打算永久挂载，需要配置开机挂载。
 	- 查看硬盘的PARTUUID，使用blkid查看，比如我的ntfs分区是/dev/sdb2
 	- ![image.png](../assets/image_1722490179690_0.png) 将这个PARTUUID写进fstab，注意将我们常规的defaults选项换成`nofail,x-systemd.device-timeout=15s` 这样防止找不到硬盘，而卡引导
-	- ![image](https://foxi.buduanwang.vip/wp-content/uploads/2023/03/1678846432630.png){:width 758, :height 108}保存就可以了。
+	- ![image.png](../assets/image_1722490196166_0.png) 保存就可以了。
 -
