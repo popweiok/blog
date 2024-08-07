@@ -15,7 +15,7 @@
 - ### [[博科Bradcom FC300光纤交换机详细配置教程]]
 - ### [[一键更换LinuxMirrors国内软件源脚本]]
 - ### [[列出Ubuntu 和 Debian 上已安装的软件包]]
-- ### [[Proxmox VE存储入门]]
+-
 - ### [[正规表达式]]
 - ### [[爱快 & OpenWrt 分流网络拓扑]]
 - [[ PVE的local和local-lvm]]
