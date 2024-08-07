@@ -1,5 +1,4 @@
-## 🔖 文章
-collapsed:: true
+- collapsed:: true
 	- [佛西博客 - Proxmox VE存储入门](https://omnivore.app/me/proxmox-ve-18eefe39472)
 	  site:: [佛西博客](https://foxi.buduanwang.vip/linux/2044.html/)
 	  author:: 佛西
