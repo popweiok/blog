@@ -30,7 +30,7 @@
 	- ```
 	  ntfsfix /dev/sdb2
 	  ```
-	- ![image.png](../assets/image_1722490131294_0.png)
+	- ![image.png](../assets/image_1722490131294_0.png){:height 279, :width 697}
 	- 之后再重新挂载
 	- `umount /dev/sdb2`
 	- `mount /dev/sdb2 /mnt/pve/hdd`
